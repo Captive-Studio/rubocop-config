@@ -1,0 +1,1 @@
+# rubocop-captive_config
