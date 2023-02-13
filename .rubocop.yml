@@ -1,7 +1,7 @@
 
 
 inherit_from:
-  - './conf/default.yml'
+  - './config/default.yml'
 
 # require:
 #   - rubocop-rails
