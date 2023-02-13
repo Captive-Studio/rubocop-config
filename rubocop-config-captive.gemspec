@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email = ['julien.polo@captive.fr']
   gem.homepage = 'https://github.com/Captive-Studio/rubocop-config'
   gem.license = 'MIT'
-  gem.required_ruby_version = '>= 2.7'
+  gem.required_ruby_version = '>= 2.5'
 
   gem.files = Dir[
     '{conf,lib}/**/*',
@@ -19,8 +19,5 @@ Gem::Specification.new do |gem|
   ]
 
   gem.add_dependency('rubocop-airbnb', '~> 4.0.0')
-
-  gem.add_development_dependency 'bundler', '~> 2.0'
-  # gem.add_development_dependency 'rake', '~> 12.3'
   # gem.metadata['rubygems_mfa_required'] = 'true'
 end
