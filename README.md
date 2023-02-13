@@ -9,13 +9,15 @@
 add the follow line into your `Gemfile`
 
 ```ruby
-gem "captive-rubocop", github: 'Captive-Studio/rubocop-config'
+group :test, :development do
+  gem "captive-rubocop", github: 'Captive-Studio/rubocop-config'
+end
 ```
 
 And then in a terminal
 
 ```console
-$ bundle
+$ bundle install
 [...]
 ```
 
@@ -26,13 +28,13 @@ $ bundle
 inherit_gem:
   captive-rubocop:
   - .rubocop.yml
-  # - .rubocop_rails.yml # Uncomment this for Ruby on Rails
-
-# Some files define `Exclude` for same cops. To merge the `Exclude` rules, add:
-inherit_mode:
-  merge:
-    - Exclude
 ```
+
+## Contributing
+
+To contribute, here are some inspirations for good configurations :
+
+- [Airbnb](https://github.com/airbnb/ruby/tree/main/rubocop-airbnb)
 
 ## License
 <!-- AUTO-GENERATED-CONTENT:START (PKG_JSON:template=[${license}][license-url] © ${author}) -->
