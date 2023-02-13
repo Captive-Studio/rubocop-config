@@ -1,68 +1,71 @@
-require:
-  - rubocop-rails
-  - rubocop-rspec
-  - rubocop-performance
+inherit_from:
+  - './conf/default.yml'
 
-AllCops:
-  NewCops: enable
+# require:
+#   - rubocop-rails
+#   - rubocop-rspec
+#   - rubocop-performance
 
-Style/Documentation:
-  Enabled: false
+# AllCops:
+#   NewCops: enable
 
-Metrics/BlockLength:
-  AllowedPatterns:
-    - guard
-    - configure
-    - describe
-    - register
+# Style/Documentation:
+#   Enabled: false
 
-Metrics/MethodLength:
-  Exclude:
-    - db/migrate/*
+# Metrics/BlockLength:
+#   AllowedPatterns:
+#     - guard
+#     - configure
+#     - describe
+#     - register
 
-Layout/LineLength:
-  Exclude:
-    - config/initializers/*
-    - spec/**/*
+# Metrics/MethodLength:
+#   Exclude:
+#     - db/migrate/*
 
-Style/AsciiComments:
-  Description: 'Use only ascii symbols in comments.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#english-comments'
-  Enabled: false
+# Layout/LineLength:
+#   Exclude:
+#     - config/initializers/*
+#     - spec/**/*
 
-RSpec/ContextWording:
-  Prefixes:
-    - 'quand'
-    - 'avec'
-    - 'sans'
+# Style/AsciiComments:
+#   Description: 'Use only ascii symbols in comments.'
+#   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#english-comments'
+#   Enabled: false
 
-RSpec/NamedSubject:
-  Enabled: false
+# RSpec/ContextWording:
+#   Prefixes:
+#     - 'quand'
+#     - 'avec'
+#     - 'sans'
 
-RSpec/ExampleLength:
-  Enabled: false
+# RSpec/NamedSubject:
+#   Enabled: false
 
-RSpec/EmptyExampleGroup:
-  Enabled: false
+# RSpec/ExampleLength:
+#   Enabled: false
 
-RSpec/VariableName:
-  AllowedPatterns:
-    - Authorization
-    - access-token
-    - token-type
+# RSpec/EmptyExampleGroup:
+#   Enabled: false
 
-RSpec/ScatteredSetup:
-  Exclude:
-    - 'spec/requests/**/*'
+# RSpec/VariableName:
+#   AllowedPatterns:
+#     - Authorization
+#     - access-token
+#     - token-type
 
-RSpec/RepeatedExample:
-  Exclude:
-    - 'spec/requests/**/*'
+# RSpec/ScatteredSetup:
+#   Exclude:
+#     - 'spec/requests/**/*'
 
-RSpec/MultipleMemoizedHelpers:
-  Max: 10
-  Exclude:
-    - 'spec/requests/**/*'
+# RSpec/RepeatedExample:
+#   Exclude:
+#     - 'spec/requests/**/*'
 
-RSpec/MessageSpies:
-  Enabled: false
+# RSpec/MultipleMemoizedHelpers:
+#   Max: 10
+#   Exclude:
+#     - 'spec/requests/**/*'
+
+# RSpec/MessageSpies:
+#   Enabled: false
