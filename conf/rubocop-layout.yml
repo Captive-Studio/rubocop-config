@@ -1,3 +1,4 @@
 inherit_gem:
   rubocop-airbnb:
+  # @see https://github.com/airbnb/ruby/blob/main/rubocop-airbnb/config/rubocop-layout.yml
   - config/rubocop-layout.yml
