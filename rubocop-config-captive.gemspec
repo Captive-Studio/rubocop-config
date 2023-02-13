@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |gem|
-  gem.name = 'captive-rubocop'
+  gem.name = 'ruboco-config-captive'
   gem.version = '1.0.0-alpha.0'
   gem.summary = 'Shared rubocop configurations'
   gem.description = 'Shared rubocop configuration for Captive projects'

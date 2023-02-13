@@ -10,7 +10,7 @@ add the follow line into your `Gemfile`
 
 ```ruby
 group :test, :development do
-  gem "captive-rubocop", github: 'Captive-Studio/rubocop-config'
+  gem "rubocop-config-captive", github: 'Captive-Studio/rubocop-config'
 end
 ```
 
@@ -26,7 +26,7 @@ $ bundle install
 ```yml
 # /.rubocop.yml
 inherit_gem:
-  captive-rubocop:
+  rubocop-config-captive:
   - conf/default.yml
   # -OR-
   # - conf/rubocop-XXX.yml
