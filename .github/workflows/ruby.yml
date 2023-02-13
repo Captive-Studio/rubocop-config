@@ -40,4 +40,6 @@ jobs:
     # - name: Run rspec
     #   run: bundle exec rspec
     - name: Run rubocop
-      run: bundle exec rubocop --config .rubocop.yml --fail-fast -d
+      run: |
+        bundle exec rubocop -V
+        bundle exec rubocop --config .rubocop.yml --fail-fast -d
