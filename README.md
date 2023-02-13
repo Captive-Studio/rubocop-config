@@ -27,7 +27,9 @@ $ bundle install
 # /.rubocop.yml
 inherit_gem:
   captive-rubocop:
-  - .rubocop.yml
+  - conf/default.yml
+  # -OR-
+  # - conf/rubocop-XXX.yml
 ```
 
 ## Contributing
