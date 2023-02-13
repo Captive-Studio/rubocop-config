@@ -1,3 +1,28 @@
+
+####
+# Enable rails rules
+####
+Rails:
+  Enabled: true
+
+####
+# Global rules
+####
+AllCops:
+  Exclude:
+    - '.chefrepo/**/*'
+    - '.vagrant/**/*'
+    - '.git/**/*'
+    - 'node_modules/**/*'
+    - 'tungsten/**/*'
+    - 'tungsten-support/**/*'
+    - 'vendor/**/*'
+    - Vagrantfile
+    - Guardfile
+
+  # Enable new rules only if validated by Captive (or Airbnb via inherited_from)
+  DisabledByDefault: true
+
 inherit_from:
   - './conf/default.yml'
 
