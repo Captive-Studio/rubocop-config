@@ -1,3 +1,6 @@
+require:
+  - rubocop-airbnb
+
 inherit_gem:
   rubocop-airbnb:
   - config/rubocop-airbnb.yml
