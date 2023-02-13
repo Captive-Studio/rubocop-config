@@ -18,9 +18,9 @@ Gem::Specification.new do |gem|
     'Gemfile',
   ]
 
-  spec.add_dependency('rubocop-airbnb', '~> 4.0.0')
+  gem.add_dependency('rubocop-airbnb', '~> 4.0.0')
 
-  spec.add_development_dependency 'bundler', '~> 2.0'
-  spec.add_development_dependency 'rake', '~> 12.3'
+  gem.add_development_dependency 'bundler', '~> 2.0'
+  gem.add_development_dependency 'rake', '~> 12.3'
   # gem.metadata['rubygems_mfa_required'] = 'true'
 end
