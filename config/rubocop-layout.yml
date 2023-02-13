@@ -1,3 +1,27 @@
 inherit_from:
   # @see https://github.com/airbnb/ruby/blob/main/rubocop-airbnb/config/rubocop-layout.yml
   - ./airbnb/rubocop-layout.yml
+
+Layout/DotPosition:
+  EnforcedStyle: leading
+
+Layout/ArgumentAlignment:
+  Enabled: true
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+
+Layout/HeredocArgumentClosingParenthesis:
+  Enabled: true
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+
+Layout/MultilineOperationIndentation:
+  Enabled: true
