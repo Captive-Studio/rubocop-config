@@ -10,3 +10,11 @@ inherit_from:
 ```
 
 you can overwrite that you want
+
+add this gems into your Gemfile
+
+```ruby
+gem 'rubocop-rails'
+gem 'rubocop-rspec'
+gem 'rubocop-performance'
+```
