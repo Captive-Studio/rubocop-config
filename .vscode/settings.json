@@ -1,0 +1,5 @@
+{
+  "ruby.rubocop.useServer": true,
+  "ruby.rubocop.onSave": true,
+  "ruby.rubocop.autocorrectOnSave": true
+}
