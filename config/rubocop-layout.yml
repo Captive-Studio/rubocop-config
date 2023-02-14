@@ -5,6 +5,10 @@ inherit_from:
 Layout/DotPosition:
   EnforcedStyle: leading
 
+Layout/BlockAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: start_of_block
+
 Layout/ArgumentAlignment:
   Enabled: true
 
@@ -24,4 +28,8 @@ Layout/MultilineMethodArgumentLineBreaks:
   Enabled: true
 
 Layout/MultilineOperationIndentation:
+  Enabled: true
+  EnforcedStyle: indented
+
+Layout/MultilineMethodParameterLineBreaks:
   Enabled: true
