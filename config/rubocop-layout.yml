@@ -15,6 +15,9 @@ Layout/ArgumentAlignment:
 Layout/FirstMethodArgumentLineBreak:
   Enabled: true
 
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+
 Layout/HeredocArgumentClosingParenthesis:
   Enabled: true
 
