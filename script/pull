@@ -21,6 +21,9 @@ sync_file ()
 {
   PROJECT_NAME=$1
   curl "$UPSTREAM_URL/$1" --silent --output "./$2" --fail --silent --show-error
+
+  # Hotfix
+  sed -i '' -e "s/IgnoredMethods:/AllowedMethods:/" "./$2"
 }
 
 cd $ROOT;
