@@ -14,12 +14,18 @@ AllCops:
     - '.vagrant/**/*'
     - '.git/**/*'
     - '**/tmp/**/*'
+    - '**/templates/**/*'
     - '**/vendor/**/*'
     - '**/node_modules/**/*'
     - 'tungsten/**/*'
     - 'tungsten-support/**/*'
     - Vagrantfile
     - Guardfile
+
+    # Additional exclude files by rubocop-rails_config
+    # @see https://github.com/toshimaru/rubocop-rails_config/blob/main/config/rails.yml#L20
+    - 'bin/**/*'
+    - 'db/schema.rb'
 
 
 
