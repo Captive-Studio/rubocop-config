@@ -26,15 +26,15 @@ sync_file ()
 cd $ROOT;
 echo "Pull github:airbnb/ruby"
 
-sync_file 'config/rubocop-airbnb.yml' 'conf/airbnb/rubocop-airbnb.yml';
-sync_file 'config/rubocop-bundler.yml' 'conf/airbnb/rubocop-bundler.yml';
-sync_file 'config/rubocop-gemspec.yml' 'conf/airbnb/rubocop-gemspec.yml';
-sync_file 'config/rubocop-layout.yml' 'conf/airbnb/rubocop-layout.yml';
-sync_file 'config/rubocop-lint.yml' 'conf/airbnb/rubocop-lint.yml';
-sync_file 'config/rubocop-metrics.yml' 'conf/airbnb/rubocop-metrics.yml';
-sync_file 'config/rubocop-naming.yml' 'conf/airbnb/rubocop-naming.yml';
-sync_file 'config/rubocop-performance.yml' 'conf/airbnb/rubocop-performance.yml';
-sync_file 'config/rubocop-rails.yml' 'conf/airbnb/rubocop-rails.yml';
-sync_file 'config/rubocop-rspec.yml' 'conf/airbnb/rubocop-rspec.yml';
-sync_file 'config/rubocop-security.yml' 'conf/airbnb/rubocop-security.yml';
-sync_file 'config/rubocop-style.yml' 'conf/airbnb/rubocop-style.yml';
+sync_file 'config/rubocop-airbnb.yml' 'config/airbnb/rubocop-airbnb.yml';
+sync_file 'config/rubocop-bundler.yml' 'config/airbnb/rubocop-bundler.yml';
+sync_file 'config/rubocop-gemspec.yml' 'config/airbnb/rubocop-gemspec.yml';
+sync_file 'config/rubocop-layout.yml' 'config/airbnb/rubocop-layout.yml';
+sync_file 'config/rubocop-lint.yml' 'config/airbnb/rubocop-lint.yml';
+sync_file 'config/rubocop-metrics.yml' 'config/airbnb/rubocop-metrics.yml';
+sync_file 'config/rubocop-naming.yml' 'config/airbnb/rubocop-naming.yml';
+sync_file 'config/rubocop-performance.yml' 'config/airbnb/rubocop-performance.yml';
+sync_file 'config/rubocop-rails.yml' 'config/airbnb/rubocop-rails.yml';
+sync_file 'config/rubocop-rspec.yml' 'config/airbnb/rubocop-rspec.yml';
+sync_file 'config/rubocop-security.yml' 'config/airbnb/rubocop-security.yml';
+sync_file 'config/rubocop-style.yml' 'config/airbnb/rubocop-style.yml';
