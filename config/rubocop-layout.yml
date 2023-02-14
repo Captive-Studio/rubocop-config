@@ -39,3 +39,7 @@ Layout/MultilineOperationIndentation:
 
 Layout/MultilineMethodParameterLineBreaks:
   Enabled: true
+
+Layout/LineLength:
+  # Disable LineLength on comments
+  AllowedPatterns: ['^(\s*#)']
