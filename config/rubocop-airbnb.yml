@@ -1,6 +1,0 @@
-# require:
-#   - rubocop-airbnb
-
-# inherit_from:
-  # @see https://github.com/airbnb/ruby/blob/main/rubocop-airbnb/config/rubocop-airbnb.yml
-  # - ./__private__/rubocop-airbnb.yml

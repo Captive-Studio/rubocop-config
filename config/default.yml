@@ -38,7 +38,6 @@ AllCops:
 # Include every files
 ####
 inherit_from:
-  - './rubocop-airbnb.yml'
   - './rubocop-bundler.yml'
   - './rubocop-gemspec.yml'
   - './rubocop-layout.yml'
