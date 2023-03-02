@@ -22,10 +22,10 @@ Gem::Specification.new do |gem|
   # ⚠️ Instead of depending on rubocop-airbnb we copy sources
   #
   # gem.add_dependency('rubocop-airbnb', '~> 4.0.0')
-  gem.add_dependency('rubocop', '~> 1.45.0')
-  gem.add_dependency('rubocop-performance', '~> 1.10.2')
-  gem.add_dependency('rubocop-rails', '~> 2.9.1')
-  gem.add_dependency('rubocop-rspec', '~> 2.0.0')
+  gem.add_dependency('rubocop', '~> 1.47.0')
+  gem.add_dependency('rubocop-performance', '~> 1.16.0 ')
+  gem.add_dependency('rubocop-rails', '~> 2.18.0')
+  gem.add_dependency('rubocop-rspec', '~> 2.18.1')
   gem.add_development_dependency('rspec', '~> 3.5')
   # gem.metadata['rubygems_mfa_required'] = 'true'
 end
