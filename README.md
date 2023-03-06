@@ -10,7 +10,7 @@ add the follow line into your `Gemfile`
 
 ```ruby
 group :test, :development do
-  gem "rubocop-config-captive", github: 'Captive-Studio/rubocop-config'
+  gem 'rubocop-config-captive', github: 'Captive-Studio/rubocop-config'
 end
 ```
 
