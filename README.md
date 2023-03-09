@@ -32,6 +32,14 @@ inherit_gem:
   # - config/rubocop-XXX.yml
 ```
 
+## My project has too many errors
+
+Firstly, you can use `bundle exec rubocop -a` to auto-correct your project
+
+Then if you have too many warnings, you can use the command line :
+
+`bundle exec rubocop --auto-gen-config` to create `.rubocop_todo.yml` file that ignore these errors
+
 ## Contributing
 
 To contribute, here are some inspirations for good configurations :
