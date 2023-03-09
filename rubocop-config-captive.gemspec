@@ -26,6 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency('rubocop-performance', '~> 1.16.0 ')
   gem.add_dependency('rubocop-rails', '~> 2.18.0')
   gem.add_dependency('rubocop-rspec', '~> 2.18.1')
+  gem.add_dependency('rubocop-capybara', '~> 2.17.1')
   gem.add_development_dependency('rspec', '~> 3.5')
   # gem.metadata['rubygems_mfa_required'] = 'true'
 end
