@@ -24,6 +24,7 @@ Gem::Specification.new do |gem|
   # gem.add_dependency('rubocop-airbnb', '~> 4.0.0')
   gem.add_dependency('rubocop', '~> 1.47.0')
   gem.add_dependency('rubocop-performance', '~> 1.16.0 ')
+  gem.add_dependency('rubocop-rake', '~> 0.6.0')
   gem.add_dependency('rubocop-rails', '~> 2.18.0')
   gem.add_dependency('rubocop-rspec', '~> 2.18.1')
   gem.add_dependency('rubocop-capybara', '~> 2.17.1')
