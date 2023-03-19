@@ -27,9 +27,9 @@ $ bundle install
 # /.rubocop.yml
 inherit_gem:
   rubocop-config-captive:
-  - config/default.yml
-  # -OR-
-  # - config/rubocop-XXX.yml
+    - config/default.yml
+    # -OR-
+    # - config/rubocop-XXX.yml
 ```
 
 ## My project has too many errors
