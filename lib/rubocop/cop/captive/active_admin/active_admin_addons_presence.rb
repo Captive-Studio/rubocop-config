@@ -5,7 +5,7 @@ module RuboCop
     module Captive
       module ActiveAdmin
         class ActiveAdminAddonsPresence < RuboCop::Cop::Cop
-          MSG = "The gem `activeadmin_addons` should be added to the Gemfile"\
+          MSG = "The gem `activeadmin_addons` should be added to the Gemfile "\
                 "if `activeadmin` is present in Gemfile"
 
           def on_send(node)
