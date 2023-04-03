@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
+require 'rubocop'
+
 module RuboCop
   module Cop
     module Captive
       module Translation
         class RailsI18nPresence < RuboCop::Cop::Cop
-          MSG = "The gem `rails-i18n` should be added to the Gemfile"\
+          MSG = "The gem `rails-i18n` should be added to the Gemfile "\
                 "if `rails` is present in Gemfile"
 
           def on_send(node)

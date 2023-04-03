@@ -5,7 +5,7 @@ module RuboCop
     module Captive
       module Translation
         class DeviseI18nPresence < RuboCop::Cop::Cop
-          MSG = "The gem `devise-i18n` should be added to the Gemfile"\
+          MSG = "The gem `devise-i18n` should be added to the Gemfile "\
                 "if `devise` is present in Gemfile"
 
           def on_send(node)

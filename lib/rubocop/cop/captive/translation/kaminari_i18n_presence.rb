@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
+require 'rubocop'
+
 module RuboCop
   module Cop
     module Captive
       module Translation
         class KaminariI18nPresence < RuboCop::Cop::Cop
-          MSG = "The gem `kaminari-i18n` should be added to the Gemfile"\
+          MSG = "The gem `kaminari-i18n` should be added to the Gemfile "\
                 "if `kaminari` is present in Gemfile"
 
           def on_send(node)
