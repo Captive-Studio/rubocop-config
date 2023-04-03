@@ -1,7 +1,13 @@
 require:
+  - ../lib/rubocop/cop/captive/active_admin/active_admin_addons_presence.rb
   - ../lib/rubocop/cop/captive/translation/devise_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/rails_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
+
+
+Captive/ActiveAdmin/ActiveAdminAddonsPresence:
+  Description: 'The gem `activeadmin_addons` should be added to the Gemfile if `activeadmin` is present in Gemfile'
+  Only: 'Gemfile'
 
 Captive/Translation/DeviseI18nPresence:
   Description: 'The gem `devise-i18n` should be added to the Gemfile if `devise` is present in Gemfile'
