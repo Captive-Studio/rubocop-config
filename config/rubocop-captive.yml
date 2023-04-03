@@ -1,0 +1,6 @@
+require:
+  - ../lib/rubocop/cop/captive/translation/devise_i18n_presence.rb
+
+Captive/Translation/DeviseI18nPresence:
+  Description: 'If devise gem is present, devise-i18n gem should be added to the Gemfile.'
+  Only: 'Gemfile'
