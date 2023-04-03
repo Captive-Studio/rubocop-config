@@ -1,6 +1,16 @@
 require:
   - ../lib/rubocop/cop/captive/translation/devise_i18n_presence.rb
+  - ../lib/rubocop/cop/captive/translation/rails_i18n_presence.rb
+  - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
 
 Captive/Translation/DeviseI18nPresence:
-  Description: 'If devise gem is present, devise-i18n gem should be added to the Gemfile.'
+  Description: 'The gem `devise-i18n` should be added to the Gemfile if `devise` is present in Gemfile'
+  Only: 'Gemfile'
+
+Captive/Translation/RailsI18nPresence:
+  Description: 'The gem `rails-i18n` should be added to the Gemfile if `rails` is present in Gemfile'
+  Only: 'Gemfile'
+
+Captive/Translation/KaminariI18nPresence:
+  Description: 'The gem `kaminari-i18n` should be added to the Gemfile if `kaminari` is present in Gemfile'
   Only: 'Gemfile'
