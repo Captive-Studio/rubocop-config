@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name = 'rubocop-config-captive'
-  gem.version = '1.0.0-alpha.0'
+  gem.version = '1.0.0-alpha.1'
   gem.summary = 'Shared rubocop configurations'
   gem.description = 'Shared rubocop configuration for Captive projects'
   gem.authors = ['Captive', 'Julien Polo', "Clément Prod'homme"]
@@ -22,12 +22,12 @@ Gem::Specification.new do |gem|
   # ⚠️ Instead of depending on rubocop-airbnb we copy sources
   #
   # gem.add_dependency('rubocop-airbnb', '~> 4.0.0')
-  gem.add_dependency('rubocop', '~> 1.47.0')
+  gem.add_dependency('rubocop', '~> 1.49.0')
   gem.add_dependency('rubocop-performance', '~> 1.16.0 ')
   gem.add_dependency('rubocop-rake', '~> 0.6.0')
   gem.add_dependency('rubocop-rails', '~> 2.18.0')
-  gem.add_dependency('rubocop-rspec', '~> 2.18.1')
+  gem.add_dependency('rubocop-rspec', '~> 2.19.0')
   gem.add_dependency('rubocop-capybara', '~> 2.17.1')
-  gem.add_development_dependency('rspec', '~> 3.5')
+  gem.add_development_dependency('rspec', '~> 3.12')
   # gem.metadata['rubygems_mfa_required'] = 'true'
 end
