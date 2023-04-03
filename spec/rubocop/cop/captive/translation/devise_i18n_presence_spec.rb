@@ -18,6 +18,7 @@ RSpec.describe RuboCop::Cop::Captive::Translation::DeviseI18nPresence do
 
   context 'when both `devise` and `devise-i18n` are present in Gemfile' do
     before { allow(Gem).to receive_message_chain(:loaded_specs, :keys, :include?).and_return(true) }
+
     let(:source) do
       <<~RUBY
         gem 'devise', '~> 4.8.0'

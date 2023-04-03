@@ -18,6 +18,7 @@ RSpec.describe RuboCop::Cop::Captive::Translation::RailsI18nPresence do
 
   context 'when both `rails` and `rails-i18n` are present in Gemfile' do
     before { allow(Gem).to receive_message_chain(:loaded_specs, :keys, :include?).and_return(true) }
+
     let(:source) do
       <<~RUBY
         gem 'rails', '~> 4.8.0'
