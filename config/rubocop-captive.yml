@@ -3,6 +3,7 @@ require:
   - ../lib/rubocop/cop/captive/translation/devise_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/rails_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
+  - ../lib/rubocop/cop/captive/string_where_in_scope.rb
 
 # ActiveAdmin
 Captive/ActiveAdmin/ActiveAdminAddonsPresence:
@@ -25,3 +26,8 @@ Captive/Translation/KaminariI18nPresence:
   Description: 'The gem `kaminari-i18n` should be added to the Gemfile if `kaminari` is present in Gemfile'
   Include:
     - 'Gemfile'
+
+Captive/StringWhereInScope:
+  Description: 'The `where` method should be used in a scope in a model.'
+  Exclude:
+    - 'app/models/**/*'
