@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name = 'rubocop-config-captive'
-  gem.version = '1.0.0-alpha.2'
+  gem.version = '1.0.0-alpha.3'
   gem.summary = 'Shared rubocop configurations'
   gem.description = 'Shared rubocop configuration for Captive projects'
   gem.authors = ['Captive', 'Julien Polo', "Clément Prod'homme"]
