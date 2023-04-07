@@ -11,7 +11,7 @@ RSpec.describe RuboCop::Cop::Captive::ActiveAdmin::ActiveAdminAddonsPresence do
     it 'registers an offense' do
       expect_offense(<<~RUBY)
         #{source}
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ The gem `activeadmin_addons` should be added to the Gemfile if `activeadmin` is present in Gemfile
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Captive/ActiveAdmin/ActiveAdminAddonsPresence: The gem `activeadmin_addons` should be added to the Gemfile if `activeadmin` is present in Gemfile
       RUBY
     end
   end

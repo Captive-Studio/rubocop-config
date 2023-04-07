@@ -12,14 +12,14 @@ RSpec.describe RuboCop::Cop::Captive::StringWhereInScope do
   it 'adds offense for string interpolation' do
     expect_offense(<<~RUBY)
       User.where('created_at > ?', 1.week.ago)
-                 ^^^^^^^^^^^^^^^^ The `where` method should be used in a scope in a model.
+                 ^^^^^^^^^^^^^^^^ Captive/StringWhereInScope: The `where` method should be used in a scope in a model.
     RUBY
   end
 
   it 'adds offense for hardcoded string' do
     expect_offense(<<~RUBY)
       User.where("status IN ('active', 'inactive')")
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ The `where` method should be used in a scope in a model.
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Captive/StringWhereInScope: The `where` method should be used in a scope in a model.
     RUBY
   end
 end

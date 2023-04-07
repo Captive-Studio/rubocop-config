@@ -11,7 +11,7 @@ RSpec.describe RuboCop::Cop::Captive::Translation::KaminariI18nPresence do
     it 'registers an offense' do
       expect_offense(<<~RUBY)
         #{source}
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^ The gem `kaminari-i18n` should be added to the Gemfile if `kaminari` is present in Gemfile
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^ Captive/Translation/KaminariI18nPresence: The gem `kaminari-i18n` should be added to the Gemfile if `kaminari` is present in Gemfile
       RUBY
     end
   end

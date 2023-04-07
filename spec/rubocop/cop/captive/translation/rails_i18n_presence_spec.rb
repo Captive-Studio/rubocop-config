@@ -11,7 +11,7 @@ RSpec.describe RuboCop::Cop::Captive::Translation::RailsI18nPresence do
     it 'registers an offense' do
       expect_offense(<<~RUBY)
         #{source}
-        ^^^^^^^^^^^^^^^^^^^^^^^ The gem `rails-i18n` should be added to the Gemfile if `rails` is present in Gemfile
+        ^^^^^^^^^^^^^^^^^^^^^^^ Captive/Translation/RailsI18nPresence: The gem `rails-i18n` should be added to the Gemfile if `rails` is present in Gemfile
       RUBY
     end
   end

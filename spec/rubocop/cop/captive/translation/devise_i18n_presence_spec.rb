@@ -11,7 +11,7 @@ RSpec.describe RuboCop::Cop::Captive::Translation::DeviseI18nPresence do
     it 'registers an offense' do
       expect_offense(<<~RUBY)
         #{source}
-        ^^^^^^^^^^^^^^^^^^^^^^^^ The gem `devise-i18n` should be added to the Gemfile if `devise` is present in Gemfile
+        ^^^^^^^^^^^^^^^^^^^^^^^^ Captive/Translation/DeviseI18nPresence: The gem `devise-i18n` should be added to the Gemfile if `devise` is present in Gemfile
       RUBY
     end
   end
