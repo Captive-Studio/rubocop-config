@@ -1,4 +1,6 @@
 # frozen_string_literal: true
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
+require 'rubocop/captive/version'
 
 Gem::Specification.new do |gem|
   gem.name = 'rubocop-config-captive'
