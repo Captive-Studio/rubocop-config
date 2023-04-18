@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 2.5'
 
   gem.files = Dir[
-    '{conf,lib}/**/*',
+    '{config,lib}/**/*',
     '*.md',
     '*.gemspec',
     'Gemfile',
