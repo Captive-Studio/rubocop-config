@@ -1,3 +1,6 @@
 inherit_from:
   # @see https://github.com/airbnb/ruby/blob/main/rubocop-airbnb/config/rubocop-bundler.yml
   - ./__private__/rubocop-bundler.yml
+
+Bundler/GemVersion:
+  EnforcedStyle: required
