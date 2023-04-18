@@ -32,13 +32,23 @@ inherit_gem:
     # - config/rubocop-XXX.yml
 ```
 
-## My project has too many errors
+## Common Errors
+
+### My project has too many errors
 
 Firstly, you can use `bundle exec rubocop -a` to auto-correct your project
 
 Then if you have too many warnings, you can use the command line :
 
 `bundle exec rubocop --auto-gen-config` to create `.rubocop_todo.yml` file that ignore these errors
+
+### `Gemfile` has lots of `Bundler/GemVersion` errors
+
+Explanation : Each dependency should be explicitly set in the `Gemfile` and `bundle update` is strongly discouraged.
+Workaround :
+
+1. Install gem bundle-locker : `gem install bundle-locker`
+1. Pin Gemfile using Gemfile.lock : `bundle-locker ./Gemfile`
 
 ## Contributing
 
