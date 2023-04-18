@@ -9,6 +9,6 @@ require 'rubocop-rails'
 
 require 'rubocop/captive'
 require 'rubocop/captive/inject'
-# require 'rubocop/airbnb/version'
+require 'rubocop/captive/version'
 
 RuboCop::Captive::Inject.defaults!
