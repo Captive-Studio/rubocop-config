@@ -6,6 +6,15 @@ module RuboCop
   module Cop
     module Captive
       module Translation
+        # Ensure to use the gem kaminari-i18n in order to have translation
+        #
+        # @example
+        #   # bad
+        #   gem 'kaminari'
+        #
+        #   # good
+        #   gem 'kaminari'
+        #   gem 'kaminari-i18n'
         class KaminariI18nPresence < RuboCop::Cop::Cop
           MSG = "The gem `kaminari-i18n` should be added to the Gemfile "\
                 "if `kaminari` is present in Gemfile"

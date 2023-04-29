@@ -5,5 +5,5 @@ lib/rubocop/captive/version.rb 85379739bb61c363862f615ba32adf3aa48d5831
 lib/rubocop/cop/captive/string_where_in_scope.rb 4b2a2ced671349f4cc6d02d46dce66398835ee96
 lib/rubocop/cop/captive/translation/rails_i18n_presence.rb dfacab77ef10b7e3111c70a749b2bc004a49fac8
 lib/rubocop/cop/captive/translation/devise_i18n_presence.rb 421f23dea69f39c4f25fcc81e23028d257e2006b
-lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb b18eacb0499e82e6e106eb3ae9c3040ad1b2c5d2
+lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb b92c951bcc6ef5791136bf4d26553a91a833b8c8
 lib/rubocop/cop/captive/active_admin/active_admin_addons_presence.rb 4b11b06328f552a68868a647594c085859a9a2f3
