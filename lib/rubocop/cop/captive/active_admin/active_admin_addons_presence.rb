@@ -4,6 +4,15 @@ module RuboCop
   module Cop
     module Captive
       module ActiveAdmin
+        # Ensure to use the gem activeadmin_addons in order to have some additionnal features
+        #
+        # @example
+        #   # bad
+        #   gem 'activeadmin'
+        #
+        #   # good
+        #   gem 'activeadmin'
+        #   gem 'activeadmin_addons'
         class ActiveAdminAddonsPresence < RuboCop::Cop::Cop
           MSG = "The gem `activeadmin_addons` should be added to the Gemfile "\
                 "if `activeadmin` is present in Gemfile"
