@@ -3,6 +3,20 @@
 module RuboCop
   module Cop
     module Captive
+      ##
+      # Prevents to use `where` with string that contains SQL apart from model.
+      # Like `where('date > ?', Date.current)`
+      # there, you writing a part of SQL.
+      # That's why it's important to write this, into a model, in order to respect the MVC architecture
+      #
+      # @example
+      #   # bad
+      #   where('date > ?', Date.current)
+      #
+      #   # good
+      #   date_after(Date.current)
+      #
+      #   scope :date_after, ->(date) { where('date > ?', date) }
       class StringWhereInScope < RuboCop::Cop::Cop
         MSG = 'The `where` method should be used in a scope in a model.'
 
