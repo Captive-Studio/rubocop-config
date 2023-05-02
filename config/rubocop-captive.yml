@@ -4,6 +4,7 @@ require:
   - ../lib/rubocop/cop/captive/translation/rails_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
   - ../lib/rubocop/cop/captive/string_where_in_scope.rb
+  - ../lib/rubocop/cop/captive/no_app_env.rb
 
 # ActiveAdmin
 Captive/ActiveAdmin/ActiveAdminAddonsPresence:
@@ -27,7 +28,11 @@ Captive/Translation/KaminariI18nPresence:
   Include:
     - 'Gemfile'
 
+# other
 Captive/StringWhereInScope:
   Description: 'The `where` method should be used in a scope in a model.'
   Exclude:
     - 'app/models/**/*'
+
+Captive/NoAppEnv:
+  Description: "Do not use `APP_ENV` environment variable as it conflicts with standard Rails/Rack environment variable `RAILS_ENV`."
