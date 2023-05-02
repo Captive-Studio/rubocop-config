@@ -14,6 +14,9 @@ Gemfile.lock
 # rbenv
 .ruby-version
 
+# node
+node_modules/
+
 # jeweler generated
 *.gem
 pkg

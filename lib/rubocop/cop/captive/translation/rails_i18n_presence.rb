@@ -6,6 +6,15 @@ module RuboCop
   module Cop
     module Captive
       module Translation
+        # Ensure to use the gem rails-i18n in order to have translation
+        #
+        # @example
+        #   # bad
+        #   gem 'rails'
+        #
+        #   # good
+        #   gem 'rails'
+        #   gem 'rails-i18n'
         class RailsI18nPresence < RuboCop::Cop::Cop
           MSG = "The gem `rails-i18n` should be added to the Gemfile "\
                 "if `rails` is present in Gemfile"
