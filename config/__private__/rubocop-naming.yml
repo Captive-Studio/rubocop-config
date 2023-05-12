@@ -1,4 +1,4 @@
-### ⚠️ GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
+### 🚨 GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
 Naming/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
   Enabled: false

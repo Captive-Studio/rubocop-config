@@ -1,4 +1,4 @@
-### ⚠️ GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
+### 🚨 GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
 require:
   - rubocop-rails
 
@@ -169,6 +169,9 @@ Rails/RelativeDateConstant:
 
 Rails/RequestReferer:
   Description: 'Use consistent syntax for request.referer.'
+  Enabled: false
+
+Rails/ReversibleMigration:
   Enabled: false
 
 Rails/SafeNavigation:

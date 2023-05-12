@@ -1,4 +1,4 @@
-### ⚠️ GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
+### 🚨 GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
 # We're using cane for ABC complexity checks
 Metrics/AbcSize:
   Enabled: false

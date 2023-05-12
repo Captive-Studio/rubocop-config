@@ -1,4 +1,4 @@
-### ⚠️ GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
+### 🚨 GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
 Security/Eval:
   Description: The use of eval represents a serious security risk.
   Enabled: true

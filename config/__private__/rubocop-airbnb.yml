@@ -1,4 +1,4 @@
-### ⚠️ GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
+### 🚨 GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
 # All of these rules are implemented in this gem.
 # They are custom built for use inside Airbnb and address issues that we have experienced in
 # testing and production.
