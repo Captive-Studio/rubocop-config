@@ -23,7 +23,7 @@ sync_file ()
   curl "$UPSTREAM_URL/$1" --silent --output "./$2" --fail --silent --show-error
 
   # Hotfix
-  sed -i '' -e '1s;^;### ⚠️ GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###\n;' "./$2"
+  sed -i '' -e '1s;^;### 🚨 GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###\n;' "./$2"
   sed -i '' -e "s/IgnoredMethods:/AllowedMethods:/" "./$2"
 }
 
