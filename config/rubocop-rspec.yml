@@ -1,3 +1,6 @@
 inherit_from:
   # @see https://github.com/airbnb/ruby/blob/main/rubocop-airbnb/config/rubocop-rspec.yml
   - ./__private__/rubocop-rspec.yml
+
+RSpec/Focus:
+  Enabled: true

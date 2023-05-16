@@ -93,6 +93,9 @@ RSpec/FilePath:
   CustomTransform:
     RuboCop: rubocop
     RSpec: rspec
+RSpec/Focus:
+  Description: Checks if examples are focused.
+  Enabled: false
 RSpec/HookArgument:
   Description: Checks the arguments passed to `before`, `around`, and `after`.
   Enabled: false
