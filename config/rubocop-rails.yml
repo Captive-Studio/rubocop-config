@@ -16,3 +16,6 @@ Rails/ActiveRecordCallbacksOrder:
 
 Rails/ActiveSupportOnLoad:
   Enabled: true
+
+Rails/AddColumnIndex:
+  Enabled: true
