@@ -10,3 +10,6 @@ Rails/ActionControllerTestCase:
 
 Rails/ActionOrder:
   Enabled: true
+
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
