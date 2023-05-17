@@ -28,3 +28,6 @@ Rails/AttributeDefaultBlockValue:
 
 Rails/CompactBlank:
   Enabled: true
+
+Rails/DeprecatedActiveModelErrorsMethods:
+  Enabled: true
