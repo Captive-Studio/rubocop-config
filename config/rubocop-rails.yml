@@ -19,3 +19,6 @@ Rails/ActiveSupportOnLoad:
 
 Rails/AddColumnIndex:
   Enabled: true
+
+Rails/AfterCommitOverride:
+  Enabled: true
