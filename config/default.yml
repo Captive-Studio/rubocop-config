@@ -41,6 +41,7 @@ inherit_from:
   - './rubocop-bundler.yml'
   - './rubocop-capybara.yml'
   - './rubocop-captive.yml'
+  - './rubocop-factory_bot.yml'
   - './rubocop-gemspec.yml'
   - './rubocop-layout.yml'
   - './rubocop-lint.yml'
