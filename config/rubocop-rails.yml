@@ -22,3 +22,6 @@ Rails/AddColumnIndex:
 
 Rails/AfterCommitOverride:
   Enabled: true
+
+Rails/AttributeDefaultBlockValue:
+  Enabled: true
