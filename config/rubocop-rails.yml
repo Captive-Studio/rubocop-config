@@ -7,3 +7,6 @@ Rails/ActionControllerFlashBeforeRender:
 
 Rails/ActionControllerTestCase:
   Enabled: false
+
+Rails/ActionOrder:
+  Enabled: true
