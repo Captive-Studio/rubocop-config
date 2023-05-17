@@ -3,4 +3,7 @@ inherit_from:
   - ./__private__/rubocop-rails.yml
 
 Rails/ActionControllerFlashBeforeRender:
-  Enable: true
+  Enabled: true
+
+Rails/ActionControllerTestCase:
+  Enabled: false
