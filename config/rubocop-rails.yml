@@ -13,3 +13,6 @@ Rails/ActionOrder:
 
 Rails/ActiveRecordCallbacksOrder:
   Enabled: true
+
+Rails/ActiveSupportOnLoad:
+  Enabled: true
