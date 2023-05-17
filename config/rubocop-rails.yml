@@ -25,3 +25,6 @@ Rails/AfterCommitOverride:
 
 Rails/AttributeDefaultBlockValue:
   Enabled: true
+
+Rails/CompactBlank:
+  Enabled: true
