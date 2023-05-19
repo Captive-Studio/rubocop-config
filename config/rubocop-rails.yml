@@ -43,3 +43,6 @@ Rails/DuplicateScope:
 
 Rails/EagerEvaluationLogMessage:
   Enabled: false
+
+Rails/ExpandedDateRange:
+  Enabled: true
