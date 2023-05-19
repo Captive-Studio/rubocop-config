@@ -52,3 +52,6 @@ Rails/FindById:
 
 Rails/DurationArithmetic:
   Enabled: true
+
+Rails/FreezeTime:
+  Enabled: true
