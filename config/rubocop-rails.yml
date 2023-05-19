@@ -55,3 +55,6 @@ Rails/DurationArithmetic:
 
 Rails/FreezeTime:
   Enabled: true
+
+Rails/I18nLazyLookup:
+  Enabled: false
