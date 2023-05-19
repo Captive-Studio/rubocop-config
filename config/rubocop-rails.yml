@@ -91,3 +91,6 @@ Rails/PluckInWhere:
 
 Rails/RedundantPresenceValidationOnBelongsTo:
   Enabled: false
+
+Rails/RedundantTravelBack:
+  Enabled: true
