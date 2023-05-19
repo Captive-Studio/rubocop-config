@@ -121,3 +121,6 @@ Rails/SquishedSQLHeredocs:
 
 Rails/StripHeredoc:
   Enabled: true
+
+Rails/TimeZoneAssignment:
+  Enabled: true
