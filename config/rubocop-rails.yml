@@ -82,3 +82,6 @@ Rails/MigrationClassName:
 
 Rails/NegateInclude:
   Enabled: false
+
+Rails/Pluck:
+  Enabled: true
