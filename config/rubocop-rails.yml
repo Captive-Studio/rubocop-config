@@ -58,3 +58,6 @@ Rails/FreezeTime:
 
 Rails/I18nLazyLookup:
   Enabled: false
+
+Rails/I18nLocaleAssignment:
+  Enabled: true
