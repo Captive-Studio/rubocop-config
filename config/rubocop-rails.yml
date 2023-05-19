@@ -34,3 +34,6 @@ Rails/DeprecatedActiveModelErrorsMethods:
 
 Rails/DotSeparatedKeys:
   Enabled: true
+
+Rails/DuplicateAssociation:
+  Enabled: true
