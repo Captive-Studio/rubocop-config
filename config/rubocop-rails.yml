@@ -70,3 +70,6 @@ Rails/IgnoredColumnsAssignment:
 
 Rails/Inquiry:
   Enabled: true
+
+Rails/MailerName:
+  Enabled: true
