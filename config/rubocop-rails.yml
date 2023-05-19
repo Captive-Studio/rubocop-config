@@ -46,3 +46,6 @@ Rails/EagerEvaluationLogMessage:
 
 Rails/ExpandedDateRange:
   Enabled: true
+
+Rails/FindById:
+  Enabled: true
