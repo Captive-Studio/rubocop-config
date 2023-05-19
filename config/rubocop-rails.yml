@@ -94,3 +94,6 @@ Rails/RedundantPresenceValidationOnBelongsTo:
 
 Rails/RedundantTravelBack:
   Enabled: true
+
+Rails/RenderInline:
+  Enabled: false
