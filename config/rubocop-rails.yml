@@ -31,3 +31,6 @@ Rails/CompactBlank:
 
 Rails/DeprecatedActiveModelErrorsMethods:
   Enabled: true
+
+Rails/DotSeparatedKeys:
+  Enabled: true
