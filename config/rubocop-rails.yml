@@ -127,3 +127,6 @@ Rails/TimeZoneAssignment:
 
 Rails/ToFormattedS:
   Enabled: true
+
+Rails/ToSWithArgument:
+  Enabled: true
