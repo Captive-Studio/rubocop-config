@@ -112,3 +112,6 @@ Rails/RootPathnameMethods:
 
 Rails/RootPublicPath:
   Enabled: true
+
+Rails/ShortI18n:
+  Enabled: true
