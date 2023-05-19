@@ -133,3 +133,6 @@ Rails/ToSWithArgument:
 
 Rails/TopLevelHashWithIndifferentAccess:
   Enabled: true
+
+Rails/TransactionExitStatement:
+  Enabled: true
