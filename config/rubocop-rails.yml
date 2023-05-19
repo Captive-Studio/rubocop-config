@@ -73,3 +73,6 @@ Rails/Inquiry:
 
 Rails/MailerName:
   Enabled: true
+
+Rails/MatchRoute:
+  Enabled: false
