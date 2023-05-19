@@ -100,3 +100,6 @@ Rails/RenderInline:
 
 Rails/RenderPlainText:
   Enabled: true
+
+Rails/ResponseParsedBody:
+  Enabled: true
