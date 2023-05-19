@@ -79,3 +79,6 @@ Rails/MatchRoute:
 
 Rails/MigrationClassName:
   Enabled: true
+
+Rails/NegateInclude:
+  Enabled: false
