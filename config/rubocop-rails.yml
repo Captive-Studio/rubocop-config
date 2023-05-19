@@ -109,3 +109,6 @@ Rails/RootJoinChain:
 
 Rails/RootPathnameMethods:
   Enabled: true
+
+Rails/RootPublicPath:
+  Enabled: true
