@@ -115,3 +115,6 @@ Rails/RootPublicPath:
 
 Rails/ShortI18n:
   Enabled: true
+
+Rails/SquishedSQLHeredocs:
+  Enabled: true
