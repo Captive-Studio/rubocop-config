@@ -145,3 +145,6 @@ Rails/WhereEquals:
 
 Rails/WhereExists:
   Enabled: true
+
+Rails/WhereMissing:
+  Enabled: true
