@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.email = ['julien.polo@captive.fr']
   gem.homepage = 'https://github.com/Captive-Studio/rubocop-config'
   gem.license = 'MIT'
-  gem.required_ruby_version = '>= 2.5'
+  gem.required_ruby_version = '>= 2.6'
 
   gem.files = Dir[
     '{config,lib}/**/*',
