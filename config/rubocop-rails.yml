@@ -103,3 +103,6 @@ Rails/RenderPlainText:
 
 Rails/ResponseParsedBody:
   Enabled: true
+
+Rails/RootJoinChain:
+  Enabled: true
