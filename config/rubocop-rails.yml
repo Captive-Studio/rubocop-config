@@ -142,3 +142,6 @@ Rails/UnusedIgnoredColumns:
 
 Rails/WhereEquals:
   Enabled: true
+
+Rails/WhereExists:
+  Enabled: true
