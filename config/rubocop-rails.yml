@@ -37,3 +37,6 @@ Rails/DotSeparatedKeys:
 
 Rails/DuplicateAssociation:
   Enabled: true
+
+Rails/DuplicateScope:
+  Enabled: true
