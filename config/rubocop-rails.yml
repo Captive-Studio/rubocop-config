@@ -130,3 +130,6 @@ Rails/ToFormattedS:
 
 Rails/ToSWithArgument:
   Enabled: true
+
+Rails/TopLevelHashWithIndifferentAccess:
+  Enabled: true
