@@ -97,3 +97,6 @@ Rails/RedundantTravelBack:
 
 Rails/RenderInline:
   Enabled: false
+
+Rails/RenderPlainText:
+  Enabled: true
