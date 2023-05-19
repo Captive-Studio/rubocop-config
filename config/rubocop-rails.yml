@@ -139,3 +139,6 @@ Rails/TransactionExitStatement:
 
 Rails/UnusedIgnoredColumns:
   Enabled: true
+
+Rails/WhereEquals:
+  Enabled: true
