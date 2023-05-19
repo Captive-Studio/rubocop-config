@@ -88,3 +88,6 @@ Rails/Pluck:
 
 Rails/PluckInWhere:
   Enabled: true
+
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: false
