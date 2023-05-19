@@ -49,3 +49,6 @@ Rails/ExpandedDateRange:
 
 Rails/FindById:
   Enabled: true
+
+Rails/DurationArithmetic:
+  Enabled: true
