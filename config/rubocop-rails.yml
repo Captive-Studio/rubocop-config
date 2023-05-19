@@ -148,3 +148,6 @@ Rails/WhereExists:
 
 Rails/WhereMissing:
   Enabled: true
+
+Rails/WhereNot:
+  Enabled: true
