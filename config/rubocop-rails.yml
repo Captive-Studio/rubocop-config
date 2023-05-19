@@ -118,3 +118,6 @@ Rails/ShortI18n:
 
 Rails/SquishedSQLHeredocs:
   Enabled: true
+
+Rails/StripHeredoc:
+  Enabled: true
