@@ -106,3 +106,6 @@ Rails/ResponseParsedBody:
 
 Rails/RootJoinChain:
   Enabled: true
+
+Rails/RootPathnameMethods:
+  Enabled: true
