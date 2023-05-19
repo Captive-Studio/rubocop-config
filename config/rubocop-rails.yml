@@ -67,3 +67,6 @@ Rails/I18nLocaleTexts:
 
 Rails/IgnoredColumnsAssignment:
   Enabled: false
+
+Rails/Inquiry:
+  Enabled: true
