@@ -136,3 +136,6 @@ Rails/TopLevelHashWithIndifferentAccess:
 
 Rails/TransactionExitStatement:
   Enabled: true
+
+Rails/UnusedIgnoredColumns:
+  Enabled: true
