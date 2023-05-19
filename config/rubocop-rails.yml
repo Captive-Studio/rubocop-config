@@ -40,3 +40,6 @@ Rails/DuplicateAssociation:
 
 Rails/DuplicateScope:
   Enabled: true
+
+Rails/EagerEvaluationLogMessage:
+  Enabled: false
