@@ -124,3 +124,6 @@ Rails/StripHeredoc:
 
 Rails/TimeZoneAssignment:
   Enabled: true
+
+Rails/ToFormattedS:
+  Enabled: true
