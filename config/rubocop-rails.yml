@@ -151,3 +151,6 @@ Rails/WhereMissing:
 
 Rails/WhereNot:
   Enabled: true
+
+Rails/WhereNotWithMultipleConditions:
+  Enabled: true
