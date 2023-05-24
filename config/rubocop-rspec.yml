@@ -4,3 +4,12 @@ inherit_from:
 
 RSpec/Focus:
   Enabled: true
+
+# exclue certains fichiers pour simplifier l'utilisation de rswag
+RSpec/ScatteredSetup:
+  Exclude:
+    - 'spec/requests/**/*'
+
+Rspec/RepeatedExample:
+  Exclude:
+    - 'spec/requests/**/*'
