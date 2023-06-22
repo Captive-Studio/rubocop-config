@@ -17,7 +17,9 @@ RSpec.describe RuboCop::Cop::Captive::ActiveAdmin::ActiveAdminAddonsPresence do
   end
 
   context 'when both `activeadmin` and `activeadmin_addons` are present in Gemfile' do
-    before { allow(Gem).to receive_message_chain(:loaded_specs, :keys, :include?).and_return(true) }
+    before(:each) do
+      allow(Gem).to receive_message_chain(:loaded_specs, :keys, :include?).and_return(true)
+    end
 
     let(:source) do
       <<~RUBY

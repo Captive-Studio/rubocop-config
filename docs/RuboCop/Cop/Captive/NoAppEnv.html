@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Class: RuboCop::Cop::Captive::StringWhereInScope
+  Class: RuboCop::Cop::Captive::NoAppEnv
   
     &mdash; Documentation by YARD 0.9.34
   
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../../../css/common.css" type="text/css" />
 
 <script type="text/javascript">
-  pathId = "RuboCop::Cop::Captive::StringWhereInScope";
+  pathId = "RuboCop::Cop::Captive::NoAppEnv";
   relpath = '../../../';
 </script>
 
@@ -36,10 +36,10 @@
       <div id="header">
         <div id="menu">
   
-    <a href="../../../_index.html">Index (S)</a> &raquo;
+    <a href="../../../_index.html">Index (N)</a> &raquo;
     <span class='title'><span class='object_link'><a href="../../../RuboCop.html" title="RuboCop (module)">RuboCop</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Cop.html" title="RuboCop::Cop (module)">Cop</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Captive.html" title="RuboCop::Cop::Captive (module)">Captive</a></span></span>
      &raquo; 
-    <span class="title">StringWhereInScope</span>
+    <span class="title">NoAppEnv</span>
   
 </div>
 
@@ -59,7 +59,7 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><h1>Class: RuboCop::Cop::Captive::StringWhereInScope
+      <div id="content"><h1>Class: RuboCop::Cop::Captive::NoAppEnv
   
   
   
@@ -76,7 +76,7 @@
           
             <li class="next">RuboCop::Cop::Cop</li>
           
-            <li class="next">RuboCop::Cop::Captive::StringWhereInScope</li>
+            <li class="next">RuboCop::Cop::Captive::NoAppEnv</li>
           
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
@@ -96,7 +96,7 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/rubocop/cop/captive/string_where_in_scope.rb</dd>
+    <dd>lib/rubocop/cop/captive/no_app_env.rb</dd>
   </dl>
   
 </div>
@@ -104,27 +104,13 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>Prevents to use ‘where` with string that contains SQL apart from model. Like `where(’date &gt; ?‘, Date.current)` there, you writing a part of SQL. That’s why it’s important to write this, into a model, in order to respect the MVC architecture</p>
+<p>This cop checks for usages of the ‘APP_ENV` environment variable. Usage of `APP_ENV` is prohibited as it conflicts with standard Rails/Rack environment variable `RAILS_ENV` and may lead to unexpected results.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
-  <div class="examples">
-    <p class="tag_title">Examples:</p>
-    
-      
-      <pre class="example code"><code><span class='comment'># bad
-</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>date &gt; ?</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='const'>Date</span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='rparen'>)</span>
-
-<span class='comment'># good
-</span><span class='id identifier rubyid_date_after'>date_after</span><span class='lparen'>(</span><span class='const'>Date</span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='rparen'>)</span>
-
-<span class='id identifier rubyid_scope'>scope</span> <span class='symbol'>:date_after</span><span class='comma'>,</span> <span class='tlambda'>-&gt;</span><span class='lparen'>(</span><span class='id identifier rubyid_date'>date</span><span class='rparen'>)</span> <span class='tlambeg'>{</span> <span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>date &gt; ?</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_date'>date</span><span class='rparen'>)</span> <span class='rbrace'>}</span></code></pre>
-    
-  </div>
-
 
 </div>
   
@@ -138,7 +124,8 @@
         <dt id="MSG-constant" class="">MSG =
           
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>The `where` method should be used in a scope in a model.</span><span class='tstring_end'>&#39;</span></span></pre></dd>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Do not use `APP_ENV` environment variable as it conflicts with </span><span class='tstring_end'>&quot;</span></span>\
+<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>standard Rails/Rack environment variable `RAILS_ENV`.</span><span class='tstring_end'>&quot;</span></span></pre></dd>
       
     </dl>
   
@@ -204,25 +191,17 @@
       <pre class="lines">
 
 
-27
-28
-29
-30
-31
-32
-33
-34</pre>
+21
+22
+23
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/rubocop/cop/captive/string_where_in_scope.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'lib/rubocop/cop/captive/no_app_env.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_send'>on_send</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
-  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='id identifier rubyid_where_with_string?'>where_with_string?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
-
-  <span class='id identifier rubyid_options_node'>options_node</span> <span class='op'>=</span> <span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
-  <span class='kw'>return</span> <span class='kw'>if</span> <span class='id identifier rubyid_options_node'>options_node</span><span class='op'>&amp;.</span><span class='id identifier rubyid_hash_type?'>hash_type?</span>
-
-  <span class='id identifier rubyid_add_offense'>add_offense</span><span class='lparen'>(</span><span class='id identifier rubyid_options_node'>options_node</span><span class='comma'>,</span> <span class='label'>message:</span> <span class='const'><span class='object_link'><a href="#MSG-constant" title="RuboCop::Cop::Captive::StringWhereInScope::MSG (constant)">MSG</a></span></span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='id identifier rubyid_env_variable?'>env_variable?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_add_offense'>add_offense</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span> <span class='label'>message:</span> <span class='const'><span class='object_link'><a href="#MSG-constant" title="RuboCop::Cop::Captive::NoAppEnv::MSG (constant)">MSG</a></span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>

@@ -3,6 +3,7 @@ require:
   - ../lib/rubocop/cop/captive/translation/devise_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/rails_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
+  - ../lib/rubocop/cop/captive/rspec/specify_before_parameter.rb
   - ../lib/rubocop/cop/captive/string_where_in_scope.rb
   - ../lib/rubocop/cop/captive/no_app_env.rb
 
@@ -27,6 +28,12 @@ Captive/Translation/KaminariI18nPresence:
   Description: 'The gem `kaminari-i18n` should be added to the Gemfile if `kaminari` is present in Gemfile'
   Include:
     - 'Gemfile'
+
+# RSpec
+Captive/RSpec/SpecifyBeforeParameter:
+  Description: 'Specify the parameter in `before` blocks. Example : before(:each) or before(:all)'
+  Include:
+    - 'spec/**/*'
 
 # other
 Captive/StringWhereInScope:

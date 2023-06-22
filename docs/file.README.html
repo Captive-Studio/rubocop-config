@@ -92,23 +92,66 @@ inherit_gem:
 
 <h2 id="common-errors">Common Errors</h2>
 
-<h3 id="my-project-has-too-many-errors">My project has too many errors</h3>
+<details>
+  <summary>
+    <strong>😩 My project has too many errors</strong>
+  </summary>
+  
+## Explanation
 
-<p>Firstly, you can use <code>bundle exec rubocop -a</code> to auto-correct your project</p>
+the configuration is very strict, it is normal to have many errors
 
-<p>Then if you have too many warnings, you can use the command line :</p>
+## Solution
 
-<p><code>bundle exec rubocop --auto-gen-config</code> to create <code>.rubocop_todo.yml</code> file that ignore these errors</p>
+### Solution 1 : Auto-correct all errors
 
-<h3 id="gemfile-has-lots-of-bundler-gemversion-errors"><code>Gemfile</code> has lots of <code>Bundler/GemVersion</code> errors</h3>
+```shell
+bundle exec rubocop -a
+```
 
-<p>Explanation : Each dependency should be explicitly set in the <code>Gemfile</code> and <code>bundle update</code> is strongly discouraged.
-Workaround :</p>
+### Solution 2 : Ignore errors and progressively fix them
 
-<ol>
-<li>Install gem bundle-locker : <code>gem install bundle-locker</code></li>
-<li>Pin Gemfile using Gemfile.lock : <code>bundle-locker ./Gemfile</code></li>
-</ol>
+```shell
+bundle exec rubocop --auto-gen-config
+```
+
+Will create `.rubocop_todo.yml` will all non passing rules. It is advised to fix them later, rule by rule.
+</details>
+
+<details>
+  <summary>
+    <strong>📍 <code>Gemfile</code> has lots of <code>Bundler/GemVersion</code> errors </strong>
+  </summary>
+
+## Explanation
+
+Each dependency should be explicitly set in the `Gemfile` and `bundle update` is strongly discouraged.
+
+## Solution
+
+### Solution 1 : Use bundle-locker
+
+1. Install bundle-locker globally
+
+  ```shell
+  gem install bundle-locker
+  ```
+
+2. Pin Gemfile using `Gemfile.lock`
+
+  ```shell
+  bundle-locker ./Gemfile
+  ```
+
+3. Manually edit `Gemfile` and adjust constraints `"x.x.x"`, `"~> x.x.x"`,  etc
+
+4. Update `Gemfile.lock`
+
+  ```shell
+  bundle install
+  ```
+
+</details>
 
 <h2 id="contributing">Contributing</h2>
 
@@ -130,7 +173,7 @@ Workaround :</p>
 </div></div>
 
       <div id="footer">
-  Generated on Sat Apr 29 23:48:23 2023 by
+  Generated on Mon Jun 26 13:16:19 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.34 (ruby-3.2.1).
 </div>
