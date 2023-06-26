@@ -27,6 +27,13 @@ TAGS
 # logfiles and tempfiles.
 **/*.log
 
+## Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+
 # BEGIN ### macOS ###
 # General
 .DS_Store
