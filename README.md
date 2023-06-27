@@ -1,6 +1,7 @@
 # Captive Rubocop config
 
 [![License][license-image]][license-url]
+[![Gem Version](https://img.shields.io/gem/v/rubocop-config-captive.svg)](https://rubygems.org/gems/rubocop-config-captive)
 
 > Rubocop shared configurations for projects
 
