@@ -1,0 +1,25 @@
+require:
+  - rubocop-magic_numbers
+
+MagicNumbers/NoArgument:
+  Enabled: true
+  PermittedValues:
+    - 0
+  Exclude:
+    - spec/**/*_spec.rb
+
+# Cette règle empeche de pouvoir faire des variables d'instances qui servent de compteur
+MagicNumbers/NoAssignment:
+  Enabled: false
+  Exclude:
+    - spec/**/*_spec.rb
+
+MagicNumbers/NoDefault:
+  Enabled: true
+  Exclude:
+    - spec/**/*_spec.rb
+
+MagicNumbers/NoReturn:
+  Enabled: true
+  Exclude:
+    - spec/**/*_spec.rb

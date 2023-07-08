@@ -45,6 +45,7 @@ inherit_from:
   - './rubocop-gemspec.yml'
   - './rubocop-layout.yml'
   - './rubocop-lint.yml'
+  - './rubocop-magic_numbers.yml'
   - './rubocop-metrics.yml'
   - './rubocop-naming.yml'
   - './rubocop-performance.yml'

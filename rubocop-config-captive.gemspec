@@ -32,6 +32,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency("rubocop-rspec", "~> 2.22.0")
   gem.add_dependency("rubocop-capybara", "~> 2.18.0")
   gem.add_dependency("rubocop-factory_bot", "~> 2.23.1")
+  gem.add_dependency("rubocop-magic_numbers", "~> 0.4.0")
   gem.add_development_dependency("rspec", "~> 3.12")
   # gem.metadata['rubygems_mfa_required'] = 'true'
 end
