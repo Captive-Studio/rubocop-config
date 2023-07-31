@@ -103,10 +103,8 @@ To contribute, here are some inspirations for good configurations :
 - [Airbnb](https://github.com/airbnb/ruby/tree/main/rubocop-airbnb)
 
 ## License
-<!-- AUTO-GENERATED-CONTENT:START (PKG_JSON:template=[${license}][license-url] © ${author}) -->
+
 [MIT][license-url] © Captive Studio <julien.polo@captive.fr>
 
-<!-- AUTO-GENERATED-CONTENT:START (PKG_JSON:template=[license-image]: https://img.shields.io/badge/license-${license}-green.svg?style=flat-square) -->
 [license-image]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
-<!-- AUTO-GENERATED-CONTENT:END -->
 [license-url]: ./LICENSE
