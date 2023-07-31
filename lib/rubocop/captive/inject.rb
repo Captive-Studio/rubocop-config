@@ -1,6 +1,6 @@
 # Straight up ripped from the custom Rspec rubocop
 # https://github.com/nevir/rubocop-rspec/blob/master/lib/rubocop/rspec/inject.rb
-require 'yaml'
+require "yaml"
 
 module RuboCop
   module Captive

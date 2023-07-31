@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'rubocop'
+require "rubocop"
 
 module RuboCop
   module Cop
@@ -23,7 +23,7 @@ module RuboCop
             return unless node.command?(:gem)
 
             gem_name = node.arguments[0]&.value
-            return unless gem_name == 'kaminari'
+            return unless gem_name == "kaminari"
 
             add_offense(node, message: MSG) unless kaminari_i18n_present?
           end
@@ -31,7 +31,7 @@ module RuboCop
           private
 
           def kaminari_i18n_present?
-            Gem.loaded_specs.keys.include?('kaminari-i18n')
+            Gem.loaded_specs.keys.include?("kaminari-i18n")
           end
         end
       end

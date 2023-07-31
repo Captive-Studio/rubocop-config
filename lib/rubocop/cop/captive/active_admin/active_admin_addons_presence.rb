@@ -21,7 +21,7 @@ module RuboCop
             return unless node.command?(:gem)
 
             gem_name = node.arguments[0]&.value
-            return unless gem_name == 'activeadmin'
+            return unless gem_name == "activeadmin"
 
             add_offense(node, message: MSG) unless activeadmin_addons_present?
           end
@@ -29,7 +29,7 @@ module RuboCop
           private
 
           def activeadmin_addons_present?
-            Gem.loaded_specs.keys.include?('activeadmin_addons')
+            Gem.loaded_specs.keys.include?("activeadmin_addons")
           end
         end
       end
