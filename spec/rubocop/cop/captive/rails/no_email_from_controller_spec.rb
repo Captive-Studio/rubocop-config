@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require "spec_helper"
 
 describe RuboCop::Cop::Captive::Rails::NoEmailFromController do
   subject(:cop) { described_class.new }
 
-  it 'registers an offense when sending email from a controller with deliver_now' do
+  it "registers an offense when sending email from a controller with deliver_now" do
     expect_offense(<<~RUBY)
       class UsersController < ApplicationController
         def send_email
@@ -16,7 +16,7 @@ describe RuboCop::Cop::Captive::Rails::NoEmailFromController do
     RUBY
   end
 
-  it 'registers an offense when sending email from a controller with deliver_later' do
+  it "registers an offense when sending email from a controller with deliver_later" do
     expect_offense(<<~RUBY)
       class UsersController < ApplicationController
         def send_email

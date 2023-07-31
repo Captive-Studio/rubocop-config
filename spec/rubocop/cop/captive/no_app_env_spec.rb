@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require "spec_helper"
 
 describe RuboCop::Cop::Captive::NoAppEnv do
   subject(:cop) { described_class.new }
@@ -20,13 +20,13 @@ describe RuboCop::Cop::Captive::NoAppEnv do
     RUBY
   end
 
-  it 'does not flag usage of Rails.env' do
+  it "does not flag usage of Rails.env" do
     expect_no_offenses(<<~RUBY)
       Rails.env
     RUBY
   end
 
-  it 'does not flag usage of other ENV variables' do
+  it "does not flag usage of other ENV variables" do
     expect_no_offenses(<<~RUBY)
       ENV['SOME_OTHER_VAR']
     RUBY

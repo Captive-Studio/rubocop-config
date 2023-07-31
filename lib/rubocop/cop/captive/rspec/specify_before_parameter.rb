@@ -27,7 +27,7 @@ module RuboCop
         class SpecifyBeforeParameter < RuboCop::Cop::Base
           extend AutoCorrector
 
-          MSG = 'Specify the parameter in `before` blocks. Example : before(:each) or before(:all)'
+          MSG = "Specify the parameter in `before` blocks. Example : before(:each) or before(:all)"
 
           def_node_matcher :before_block?, <<~PATTERN
             (block
@@ -53,7 +53,7 @@ module RuboCop
 
           def add_parameter(node)
             source = node.loc.expression.source
-            source.insert(source.index('before') + 6, '(:each)')
+            source.insert(source.index("before") + 6, "(:each)")
           end
         end
       end
