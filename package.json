@@ -4,12 +4,12 @@
     "lint-staged": "13.2.3"
   },
   "scripts": {
+    "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
     "prepare": "husky install"
   },
   "lint-staged": {
     "lib/**/*.rb": [
-      "yard -o docs",
-      "git add docs/"
+      "npm run docs"
     ]
   }
 }
