@@ -37,4 +37,7 @@ The best example is a Gemfile, where we can often find both single quotes and do
 
 ## Decision
 
+Enable rules with `'double_quotes'` just like Rails convention seems to create a more maintainable code.
+It is an easier rule to apply on a daily basis as it is equivalent to "put double quotes everywhere and it will be fine".
+
 ## Consequences
