@@ -43,3 +43,8 @@ Layout/MultilineMethodParameterLineBreaks:
 Layout/LineLength:
   # Disable LineLength on comments
   AllowedPatterns: ['^(\s*#)']
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'test/**/*.rb'
+    - '**/*_spec.rb'
+    - '**/*_test.rb'
