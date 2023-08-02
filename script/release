@@ -30,7 +30,7 @@ fi
 git pull origin main
 
 # Determine the current version of the gem
-version=$(grep -E "VERSION = '[0-9]+\.[0-9]+\.[0-9]+" lib/rubocop/captive/version.rb | cut -d "'" -f 2)
+version=$(grep -E "VERSION = \"[0-9]+\.[0-9]+\.[0-9]+" lib/rubocop/captive/version.rb | cut -d '"' -f 2)
 echo "Current version is ${version}"
 
 # Determine the version to release
