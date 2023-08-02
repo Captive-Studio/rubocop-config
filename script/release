@@ -53,7 +53,7 @@ fi
 echo "Creating version ${new_version} ..."
 
 # Update the version in rubocop/captive/version.rb
-sed -i '' "s/VERSION = '${version}'/VERSION = '${new_version}'/" lib/rubocop/captive/version.rb
+sed -i '' "s/VERSION = \"${version}'/VERSION = \"${new_version}'/" lib/rubocop/captive/version.rb
 
 # Add the modified file and create a commit
 git add lib/rubocop/captive/version.rb
