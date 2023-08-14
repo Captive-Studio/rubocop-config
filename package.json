@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "husky": "8.0.3",
-    "lint-staged": "13.2.3"
+    "lint-staged": "13.3.0"
   },
   "scripts": {
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
