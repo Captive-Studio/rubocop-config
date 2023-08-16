@@ -1,12 +1,18 @@
 {
   "devDependencies": {
-    "husky": "8.0.3",
-    "lint-staged": "13.3.0"
+    "@captive/commitlint-config": "1.1.21",
+    "concurrently": "8.2.0"
   },
   "scripts": {
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
-    "prepare": "husky install",
+    "prepare": "concurrently \"npm:postinstall:*\"",
+    "prepare:githooks": "[ -n \"${CI:-}\" ] || npx husky install .githooks",
     "postinstall": "npm run prepare"
+  },
+  "commitlint": {
+    "extends": [
+      "@captive/commitlint-config"
+    ]
   },
   "lint-staged": {
     "lib/**/*.rb": [
