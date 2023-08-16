@@ -3,7 +3,12 @@
 
 name: Ruby
 
-on: [pull_request, push]
+on:
+  merge_group: {}
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: read
