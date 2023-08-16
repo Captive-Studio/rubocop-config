@@ -5,11 +5,13 @@
   },
   "scripts": {
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postinstall": "npm run prepare"
   },
   "lint-staged": {
     "lib/**/*.rb": [
       "npm run docs"
     ]
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
