@@ -5,6 +5,7 @@ require:
   - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
   - ../lib/rubocop/cop/captive/rspec/specify_before_parameter.rb
   - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
+  - ../lib/rubocop/cop/captive/rails/no_instance_variables_in_partials.rb
   - ../lib/rubocop/cop/captive/string_where_in_scope.rb
   - ../lib/rubocop/cop/captive/no_app_env.rb
 
@@ -41,6 +42,11 @@ Captive/Rails/NoEmailFromController:
   Description: "Do not send emails from controllers. Because it doesn't follow the MVC standard"
   Include:
     - 'app/controllers/**/*'
+
+Captive/Rails/NoInstanceVariablesInPartials:
+  Description: "Avoid using instance variables in partials."
+  Include:
+    - 'app/views/**/_*.erb'
 
 # other
 Captive/StringWhereInScope:
