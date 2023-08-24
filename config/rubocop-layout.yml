@@ -45,7 +45,7 @@ Layout/LineLength:
   AllowedPatterns: ['^(\s*#)']
   Exclude:
     - '**/*.gemspec'
-    - 'spec/**/*.rb'
-    - 'test/**/*.rb'
+    - '**/spec/**/*.rb'
+    - '**/test/**/*.rb'
     - '**/*_spec.rb'
     - '**/*_test.rb'
