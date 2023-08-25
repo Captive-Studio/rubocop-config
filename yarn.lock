@@ -6,11 +6,11 @@ __metadata:
   cacheKey: 8
 
 "@babel/runtime@npm:^7.21.0":
-  version: 7.22.10
-  resolution: "@babel/runtime@npm:7.22.10"
+  version: 7.22.11
+  resolution: "@babel/runtime@npm:7.22.11"
   dependencies:
     regenerator-runtime: ^0.14.0
-  checksum: 524d41517e68953dbc73a4f3616b8475e5813f64e28ba89ff5fca2c044d535c2ea1a3f310df1e5bb06162e1f0b401b5c4af73fe6e2519ca2450d9d8c44cf268d
+  checksum: a5cd6683a8fcdb8065cb1677f221e22f6c67ec8f15ad1d273b180b93ab3bd86c66da2c48f500d4e72d8d2cfa85ff4872a3f350e5aa3855630036af5da765c001
   languageName: node
   linkType: hard
 
@@ -38,28 +38,28 @@ __metadata:
   linkType: hard
 
 "@w5s/commitlint-config@npm:^1.0.24":
-  version: 1.2.0
-  resolution: "@w5s/commitlint-config@npm:1.2.0"
+  version: 1.2.1
+  resolution: "@w5s/commitlint-config@npm:1.2.1"
   dependencies:
     "@commitlint/types": ^17.0.0
-    "@w5s/conventional-changelog": ^1.2.0
+    "@w5s/conventional-changelog": ^1.2.1
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 204e983238aeb9e06ce54856b349bf7d72727205b9c152e02536ab1bbdf562edcf52a7d841510e2cece372b8a06d631bea948658ce5e6767c87f034781828b9d
+  checksum: 9ecc4193b7c6781824d1bb4a09a3d3682ca2b85b8ec5e57c80d196d9b247bb921e76cda4c2b8136bf80317950deb1a6cc51e18072ab24f5a87cbd35bc9cdb705
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@w5s/conventional-changelog@npm:1.2.0"
+"@w5s/conventional-changelog@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@w5s/conventional-changelog@npm:1.2.1"
   dependencies:
     "@commitlint/types": ^17.0.0
     emoji-regex: ^10.2.1
     gitmojis: ^3.13.4
-  checksum: 42fbdb2511dd66e9d4749ffe0dc2d1d14b9ba499113e1d1a75af23157618498aa9f4d16032145e5ff3affff5c3d1e9fbd28740c1ac2f92bbac7ab823801518b9
+  checksum: 37679d0549891f6fbb6f09501dcfcfb31974f5d59175ff40d1586fea0b5e3420252206c424a575f48df30232fd56bfe71fb0f0bb60caf060b46bbeda807c3664
   languageName: node
   linkType: hard
 
