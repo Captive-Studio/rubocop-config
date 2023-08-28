@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@captive/commitlint-config": "1.1.21",
+    "@captive/commitlint-config": "1.1.22",
     "concurrently": "8.2.1"
   },
   "scripts": {
