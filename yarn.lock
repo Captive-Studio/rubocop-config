@@ -6,11 +6,11 @@ __metadata:
   cacheKey: 8
 
 "@babel/runtime@npm:^7.21.0":
-  version: 7.22.15
-  resolution: "@babel/runtime@npm:7.22.15"
+  version: 7.23.2
+  resolution: "@babel/runtime@npm:7.23.2"
   dependencies:
     regenerator-runtime: ^0.14.0
-  checksum: 793296df1e41599a935a3d77ec01eb6088410d3fd4dbe4e92f06c6b7bb2f8355024e6d78621a3a35f44e0e23b0b59107f23d585384df4f3123256a1e1492040e
+  checksum: 6c4df4839ec75ca10175f636d6362f91df8a3137f86b38f6cd3a4c90668a0fe8e9281d320958f4fbd43b394988958585a17c3aab2a4ea6bf7316b22916a371fb
   languageName: node
   linkType: hard
 
@@ -38,28 +38,28 @@ __metadata:
   linkType: hard
 
 "@w5s/commitlint-config@npm:^1.0.24":
-  version: 1.2.1
-  resolution: "@w5s/commitlint-config@npm:1.2.1"
+  version: 1.2.4
+  resolution: "@w5s/commitlint-config@npm:1.2.4"
   dependencies:
     "@commitlint/types": ^17.0.0
-    "@w5s/conventional-changelog": ^1.2.1
+    "@w5s/conventional-changelog": ^1.2.4
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 9ecc4193b7c6781824d1bb4a09a3d3682ca2b85b8ec5e57c80d196d9b247bb921e76cda4c2b8136bf80317950deb1a6cc51e18072ab24f5a87cbd35bc9cdb705
+  checksum: 8209db099444706988e40d8752113fa4fc5e1d63abd124d82860bbe08df9f5ba59ca16325ea7ee9e7b9fb438a6427228fdbf426e00e8c8850efd70520bf7956b
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@w5s/conventional-changelog@npm:1.2.1"
+"@w5s/conventional-changelog@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@w5s/conventional-changelog@npm:1.2.4"
   dependencies:
     "@commitlint/types": ^17.0.0
     emoji-regex: ^10.2.1
     gitmojis: ^3.13.4
-  checksum: 37679d0549891f6fbb6f09501dcfcfb31974f5d59175ff40d1586fea0b5e3420252206c424a575f48df30232fd56bfe71fb0f0bb60caf060b46bbeda807c3664
+  checksum: 2b01c7efa7e99a80be07da8563e7c448c49d02b169f74a78628772d401dd95b3d4d4dd3998c12f8b87aa91c5ce1ab28ff0cf8cd20480eebe68428752505731f9
   languageName: node
   linkType: hard
 
@@ -174,9 +174,9 @@ __metadata:
   linkType: hard
 
 "gitmojis@npm:^3.13.4":
-  version: 3.13.5
-  resolution: "gitmojis@npm:3.13.5"
-  checksum: 715c529fc2b1fe380ada32e971d359398b4bde8f969c221c4e8b0ae4fa75ae55069e2bce8a7285868dec7a5f65c12bc1c72e4f8413f294301af7a263201f04bc
+  version: 3.14.0
+  resolution: "gitmojis@npm:3.14.0"
+  checksum: b8979133601d946bc815b7e5ba03c65f592f2fbb935b1aa80efc0b81003752034c6ef3f1f223a413092cd151d3caf98f30cd7ae80f5459b51d216b95333aa625
   languageName: node
   linkType: hard
 
