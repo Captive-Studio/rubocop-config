@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@captive/commitlint-config": "2.0.0",
-    "concurrently": "8.2.1"
+    "concurrently": "8.2.2"
   },
   "scripts": {
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
