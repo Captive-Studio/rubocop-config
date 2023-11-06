@@ -32,6 +32,9 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.syntax = :expect # Disable `should_receive` and `stub`
   end
+
+  config.run_all_when_everything_filtered = true
+  config.filter_run :focus
 end
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
