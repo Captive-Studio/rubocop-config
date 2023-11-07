@@ -4,7 +4,14 @@ module RuboCop
   module Cop
     module Captive
       module Rails
+        ##
         # This cop ensures the cofig force_ssl il set to true.
+        #
+        # Pourquoi il faut configurer le `force_ssl` à `true` en production ?
+        # 1) Ça redirige les requêtes http → https. C’est une option que permet également le routeur de Scalingo
+        # 2) Ça ajoute un flag `Secure` sur les Cookies. S’il n’est pas présent, c’est considéré comme une vulnérabilité car ça peut permettre à un pirate de récupérer le cookie en HTTP et potentiellement voler la session.
+        # @see https://www.notion.so/captive/Corriger-la-vuln-rabilit-Insecure-cookie-setting-missing-Secure-flag-7962ae24774d4de39dcda5a80cca4fcf?pvs=26&qid=
+        # @see https://support.detectify.com/support/solutions/articles/48001048982-cookie-lack-secure-flag article détaillant la sécurité du cookie
         class ForceSslEnabledInProduction < Base
           extend AutoCorrector
 
