@@ -7,7 +7,8 @@
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
     "prepare": "concurrently \"npm:postinstall:*\"",
     "prepare:githooks": "[ -n \"${CI:-}\" ] || npx husky install .githooks",
-    "postinstall": "npm run prepare"
+    "postinstall": "npm run prepare",
+    "release": "script/release"
   },
   "commitlint": {
     "extends": [
