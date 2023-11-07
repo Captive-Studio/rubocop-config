@@ -5,7 +5,7 @@ module RuboCop
     module Captive
       module Rails
         ##
-        # This cop ensures the cofig force_ssl il set to true.
+        # This cop ensures the config force_ssl is set to true.
         #
         # Pourquoi il faut configurer le `force_ssl` à `true` en production ?
         # 1) Ça redirige les requêtes http → https. C’est une option que permet également le routeur de Scalingo
