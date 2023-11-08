@@ -52,8 +52,9 @@ module RuboCop
           private
 
           def add_parameter(node)
+            magic_number = 6
             source = node.loc.expression.source
-            source.insert(source.index("before") + 6, "(:each)")
+            source.insert(source.index("before") + magic_number, "(:each)")
           end
         end
       end
