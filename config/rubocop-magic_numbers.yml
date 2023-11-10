@@ -5,10 +5,14 @@ MagicNumbers/NoArgument:
   Enabled: true
   PermittedValues:
     - 0
+    - -1
+    - 1
   Exclude:
     - spec/**/*_spec.rb
     - spec/rails_helper.rb
+    - db/migrate/*.rb
     - config/**/*
+    - '**/config/**/*'
 
 # Cette règle empeche de pouvoir faire des variables d'instances qui servent de compteur
 MagicNumbers/NoAssignment:
