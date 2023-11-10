@@ -7,6 +7,8 @@ MagicNumbers/NoArgument:
     - 0
   Exclude:
     - spec/**/*_spec.rb
+    - spec/rails_helper.rb
+    - config/**/*
 
 # Cette règle empeche de pouvoir faire des variables d'instances qui servent de compteur
 MagicNumbers/NoAssignment:
