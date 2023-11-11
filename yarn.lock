@@ -29,11 +29,11 @@ __metadata:
   linkType: hard
 
 "@commitlint/types@npm:^18.0.0":
-  version: 18.1.0
-  resolution: "@commitlint/types@npm:18.1.0"
+  version: 18.4.0
+  resolution: "@commitlint/types@npm:18.4.0"
   dependencies:
     chalk: "npm:^4.1.0"
-  checksum: 283b79bdc150defc4f25b8a90ddc95440a555db10dd5783f4f759d297b92e5a6dacd8f186c329c5ee72b5bfd0512804dee639190e7d4d9f572c17002d15a5765
+  checksum: f8b82516081967e91fbefaa7ed65f78c691ff4a8c45d896e90b2994fd99c07c98bb216471a43c2187eafe31e01dd2f083c7b32a9afa741d2f640474399705412
   languageName: node
   linkType: hard
 
