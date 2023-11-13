@@ -9,6 +9,7 @@ MagicNumbers/NoArgument:
     - 1
   Exclude:
     - spec/**/*_spec.rb
+    - test/**/*_test.rb
     - spec/rails_helper.rb
     - db/migrate/*.rb
     - config/**/*
@@ -19,13 +20,16 @@ MagicNumbers/NoAssignment:
   Enabled: false
   Exclude:
     - spec/**/*_spec.rb
+    - test/**/*_test.rb
 
 MagicNumbers/NoDefault:
   Enabled: true
   Exclude:
     - spec/**/*_spec.rb
+    - test/**/*_test.rb
 
 MagicNumbers/NoReturn:
   Enabled: true
   Exclude:
     - spec/**/*_spec.rb
+    - test/**/*_test.rb
