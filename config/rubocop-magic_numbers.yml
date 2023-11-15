@@ -20,17 +20,23 @@ MagicNumbers/NoArgument:
 MagicNumbers/NoAssignment:
   Enabled: false
   Exclude:
-    - spec/**/*_spec.rb
-    - test/**/*_test.rb
+    - '**/spec/**/*.rb'
+    - '**/test/**/*.rb'
+    - '**/*_spec.rb'
+    - '**/*_test.rb'
 
 MagicNumbers/NoDefault:
   Enabled: true
   Exclude:
-    - spec/**/*_spec.rb
-    - test/**/*_test.rb
+    - '**/spec/**/*.rb'
+    - '**/test/**/*.rb'
+    - '**/*_spec.rb'
+    - '**/*_test.rb'
 
 MagicNumbers/NoReturn:
   Enabled: true
   Exclude:
-    - spec/**/*_spec.rb
-    - test/**/*_test.rb
+    - '**/spec/**/*.rb'
+    - '**/test/**/*.rb'
+    - '**/*_spec.rb'
+    - '**/*_test.rb'
