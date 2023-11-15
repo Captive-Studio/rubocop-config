@@ -8,9 +8,10 @@ MagicNumbers/NoArgument:
     - -1
     - 1
   Exclude:
-    - spec/**/*_spec.rb
-    - test/**/*_test.rb
-    - spec/rails_helper.rb
+    - '**/spec/**/*.rb'
+    - '**/test/**/*.rb'
+    - '**/*_spec.rb'
+    - '**/*_test.rb'
     - db/migrate/*.rb
     - config/**/*
     - '**/config/**/*'
