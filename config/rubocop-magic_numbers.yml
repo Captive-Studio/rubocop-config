@@ -12,9 +12,8 @@ MagicNumbers/NoArgument:
     - '**/test/**/*.rb'
     - '**/*_spec.rb'
     - '**/*_test.rb'
-    - db/migrate/*.rb
-    - config/**/*
     - '**/config/**/*'
+    - db/migrate/*.rb
 
 # Cette règle empeche de pouvoir faire des variables d'instances qui servent de compteur
 MagicNumbers/NoAssignment:
@@ -24,6 +23,7 @@ MagicNumbers/NoAssignment:
     - '**/test/**/*.rb'
     - '**/*_spec.rb'
     - '**/*_test.rb'
+    - '**/config/**/*'
 
 MagicNumbers/NoDefault:
   Enabled: true
@@ -32,6 +32,7 @@ MagicNumbers/NoDefault:
     - '**/test/**/*.rb'
     - '**/*_spec.rb'
     - '**/*_test.rb'
+    - '**/config/**/*'
 
 MagicNumbers/NoReturn:
   Enabled: true
@@ -40,3 +41,4 @@ MagicNumbers/NoReturn:
     - '**/test/**/*.rb'
     - '**/*_spec.rb'
     - '**/*_test.rb'
+    - '**/config/**/*'
