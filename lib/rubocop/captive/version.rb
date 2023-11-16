@@ -3,6 +3,6 @@
 module RuboCop
   module Captive
     # Version information for the the Airbnb RuboCop plugin.
-    VERSION = "1.9.6"
+    VERSION = "1.9.7"
   end
 end
