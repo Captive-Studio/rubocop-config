@@ -16,17 +16,15 @@ module RuboCop
           extend AutoCorrector
 
           MSG = "force_ssl should be enabled in production."
+          GOOD_PRACTICE = "ENV[\"SKIP_FORCE_SSL\"].blank?"
 
           def on_send(node)
             if setting_force_ssl_not_true?(node)
               add_offense(node, message: MSG) do |corrector|
-                # Replace with 'true' only if the argument is not already 'true'
-                unless node.arguments.first.true_type?
-                  corrector.replace(
-                    node.arguments.first.source_range,
-                    "true"
-                  )
-                end
+                corrector.replace(
+                  node.arguments.first.source_range,
+                  GOOD_PRACTICE
+                )
               end
             end
           end
@@ -40,14 +38,25 @@ module RuboCop
           private
 
           def setting_force_ssl_not_true?(node)
-            node.method_name == :force_ssl= && !node.arguments.first.true_type?
+            node.method_name == :force_ssl= && node.arguments != [
+              s(
+                :send,
+                s(
+                  :send,
+                  s(:const, nil, :ENV),
+                  :[],
+                  s(:str, "SKIP_FORCE_SSL")
+                ),
+                :blank?
+              ),
+            ]
           end
 
           def check_comment(comment)
             return unless force_ssl_commented?(comment.text)
 
             add_offense(comment.loc.expression, message: MSG) do |corrector|
-              corrector.replace(comment.loc.expression, "config.force_ssl = true")
+              corrector.replace(comment.loc.expression, "config.force_ssl = #{GOOD_PRACTICE}")
             end
           end
 
