@@ -27,13 +27,7 @@ MagicNumbers/NoAssignment:
     - '**/config/**/*'
 
 MagicNumbers/NoDefault:
-  Enabled: true
-  Exclude:
-    - '**/spec/**/*.rb'
-    - '**/test/**/*.rb'
-    - '**/*_spec.rb'
-    - '**/*_test.rb'
-    - '**/config/**/*'
+  Enabled: false
 
 MagicNumbers/NoReturn:
   Enabled: true
