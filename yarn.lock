@@ -6,11 +6,11 @@ __metadata:
   cacheKey: 10c0
 
 "@babel/runtime@npm:^7.21.0":
-  version: 7.23.5
-  resolution: "@babel/runtime@npm:7.23.5"
+  version: 7.23.6
+  resolution: "@babel/runtime@npm:7.23.6"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
-  checksum: ca679cc91bb7e424bc2db87bb58cc3b06ade916b9adb21fbbdc43e54cdaacb3eea201ceba2a0464b11d2eb65b9fe6a6ffcf4d7521fa52994f19be96f1af14788
+  checksum: d886954e985ef8e421222f7a2848884d96a752e0020d3078b920dd104e672fdf23bcc6f51a44313a048796319f1ac9d09c2c88ec8cbb4e1f09174bcd3335b9ff
   languageName: node
   linkType: hard
 
@@ -38,28 +38,28 @@ __metadata:
   linkType: hard
 
 "@w5s/commitlint-config@npm:^2.0.0":
-  version: 2.0.4
-  resolution: "@w5s/commitlint-config@npm:2.0.4"
+  version: 2.0.5
+  resolution: "@w5s/commitlint-config@npm:2.0.5"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
-    "@w5s/conventional-changelog": "npm:^2.0.2"
+    "@w5s/conventional-changelog": "npm:^2.0.3"
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 0e85442e6227fc2d1c1fee3df3870b5d3ed3840c8d20ea9bc63832ee25ad1745a2961b0221ec4728cbde12f63eb8185bf826fcfdeb0a4a971dd4a52b885176cf
+  checksum: ef4b8a498f3b92e4806caa4248da7ae71a87205c2d623020f7c836bbe5e6666edc3d90a7e551bed6f6f01571332fd40186ecad4b940863cf0601ce9e1066344c
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@w5s/conventional-changelog@npm:2.0.2"
+"@w5s/conventional-changelog@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@w5s/conventional-changelog@npm:2.0.3"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
     emoji-regex: "npm:^10.2.1"
     gitmojis: "npm:^3.13.4"
-  checksum: 0a546170d7e80bcbd2dc62a6fe35ed2f189656e4d31f7b3cf8c360805f51c5ad076272190e7f52e946f4271a5943626df3a41d359cf316984742f6b04ca7f16c
+  checksum: ced0d12c9fdd1b5d81c861b8a8e2f3684a777d156189a6014de3105627f7f32d2c9e9e82fc83294b592ccc771f604b22401eeda63bd40b30b8a9d0d368b428e8
   languageName: node
   linkType: hard
 
@@ -202,9 +202,9 @@ __metadata:
   linkType: hard
 
 "regenerator-runtime@npm:^0.14.0":
-  version: 0.14.0
-  resolution: "regenerator-runtime@npm:0.14.0"
-  checksum: e25f062c1a183f81c99681691a342760e65c55e8d3a4d4fe347ebe72433b123754b942b70b622959894e11f8a9131dc549bd3c9a5234677db06a4af42add8d12
+  version: 0.14.1
+  resolution: "regenerator-runtime@npm:0.14.1"
+  checksum: 1b16eb2c4bceb1665c89de70dcb64126a22bc8eb958feef3cd68fe11ac6d2a4899b5cd1b80b0774c7c03591dc57d16631a7f69d2daa2ec98100e2f29f7ec4cc4
   languageName: node
   linkType: hard
 
