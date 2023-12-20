@@ -19,9 +19,9 @@ describe RuboCop::Cop::Captive::Rails::ForceSslEnabledInProduction do
     RUBY
   end
 
-  it "does not register an offense when force_ssl is set to true" do
+  it "does not register an offense when force_ssl is tied to an env var" do
     expect_no_offenses(<<~RUBY)
-      config.force_ssl = true
+      config.force_ssl = ENV["SKIP_FORCE_SSL"].blank?
     RUBY
   end
 
