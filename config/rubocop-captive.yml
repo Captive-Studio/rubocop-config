@@ -4,8 +4,9 @@ require:
   - ../lib/rubocop/cop/captive/translation/rails_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
   - ../lib/rubocop/cop/captive/rspec/specify_before_parameter.rb
-  - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
   - ../lib/rubocop/cop/captive/rails/force_ssl_enabled_in_production.rb
+  - ../lib/rubocop/cop/captive/rails/migration_methods.rb
+  - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
   - ../lib/rubocop/cop/captive/string_where_in_scope.rb
   - ../lib/rubocop/cop/captive/no_app_env.rb
 
@@ -38,16 +39,22 @@ Captive/RSpec/SpecifyBeforeParameter:
     - 'spec/**/*'
 
 # Rails
-Captive/Rails/NoEmailFromController:
-  Description: "Do not send emails from controllers. Because it doesn't follow the MVC standard"
-  Include:
-    - 'app/controllers/**/*'
-
-# Rails
 Captive/Rails/ForceSslEnabledInProduction:
   Description: "Ensures SSL is forced in production, so that secure cookies are used."
   Include:
     - 'config/environments/production.rb'
+
+# Rails
+Captive/Rails/MigrationMethods:
+  Description: "Avoid using ActiveRecord::Migration methods in `up` and `down` methods. Use `change` instead."
+  Include:
+    - 'db/migrate/**/*'
+
+# Rails
+Captive/Rails/NoEmailFromController:
+  Description: "Do not send emails from controllers. Because it doesn't follow the MVC standard"
+  Include:
+    - 'app/controllers/**/*'
 
 # other
 Captive/StringWhereInScope:
