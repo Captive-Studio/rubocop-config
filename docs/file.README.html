@@ -57,16 +57,16 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h1 id="captive-rubocop-config">Captive Rubocop config</h1>
+      <div id="content"><div id='filecontents'>
+<h1 id="label-Captive+Rubocop+config">Captive Rubocop config</h1>
 
-<p><a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="License"></a>
-<a href="https://rubygems.org/gems/rubocop-config-captive"><img src="https://img.shields.io/gem/v/rubocop-config-captive.svg" alt="Gem Version"></a></p>
+<p><a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square"></a> <a href="https://rubygems.org/gems/rubocop-config-captive"><img src="https://img.shields.io/gem/v/rubocop-config-captive.svg"></a></p>
 
 <blockquote>
 <p>Rubocop shared configurations for projects</p>
 </blockquote>
 
-<h2 id="install">Install</h2>
+<h2 id="label-Install">Install</h2>
 
 <p>add the follow line into your <code>Gemfile</code></p>
 
@@ -77,13 +77,13 @@
 
 <p>And then in a terminal</p>
 
-<pre class="code console"><code class="console">$ bundle install
+<pre class="code ruby"><code class="ruby">$ bundle install
 [...]
 </code></pre>
 
-<h2 id="usage">Usage</h2>
+<h2 id="label-Usage">Usage</h2>
 
-<pre class="code yml"><code class="yml"># /.rubocop.yml
+<pre class="code ruby"><code class="ruby"># /.rubocop.yml
 inherit_gem:
   rubocop-config-captive:
     - config/default.yml
@@ -91,92 +91,81 @@ inherit_gem:
     # - config/rubocop-XXX.yml
 </code></pre>
 
-<h2 id="common-errors">Common Errors</h2>
+<h2 id="label-Common+Errors">Common Errors</h2>
 
-<details>
-  <summary>
-    <strong>😩 My project has too many errors</strong>
-  </summary>
-  
-## Explanation
+<p>&lt;details&gt; &lt;summary&gt; &lt;strong&gt;😩 My project has too many errors&lt;/strong&gt; &lt;/summary&gt;</p>
 
-the configuration is very strict, it is normal to have many errors
+<h2 id="label-Explanation">Explanation</h2>
 
-## Solution
+<p>the configuration is very strict, it is normal to have many errors</p>
 
-### Solution 1 : Auto-correct all errors
+<h2 id="label-Solution">Solution</h2>
 
-```shell
-bundle exec rubocop -a
-```
+<h3 id="label-Solution+1+-3A+Auto-correct+all+errors">Solution 1 : Auto-correct all errors</h3>
 
-### Solution 2 : Ignore errors and progressively fix them
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_bundle'>bundle</span> <span class='id identifier rubyid_exec'>exec</span> <span class='id identifier rubyid_rubocop'>rubocop</span> <span class='op'>-</span><span class='id identifier rubyid_a'>a</span>
+</code></pre>
 
-```shell
-bundle exec rubocop --auto-gen-config
-```
+<h3 id="label-Solution+2+-3A+Ignore+errors+and+progressively+fix+them">Solution 2 : Ignore errors and progressively fix them</h3>
 
-Will create `.rubocop_todo.yml` will all non passing rules. It is advised to fix them later, rule by rule.
-</details>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_bundle'>bundle</span> <span class='id identifier rubyid_exec'>exec</span> <span class='id identifier rubyid_rubocop'>rubocop</span> <span class='op'>-</span><span class='op'>-</span><span class='id identifier rubyid_auto'>auto</span><span class='op'>-</span><span class='id identifier rubyid_gen'>gen</span><span class='op'>-</span><span class='id identifier rubyid_config'>config</span>
+</code></pre>
 
-<details>
-  <summary>
-    <strong>📍 <code>Gemfile</code> has lots of <code>Bundler/GemVersion</code> errors </strong>
-  </summary>
+<p>Will create <code>.rubocop_todo.yml</code> will all non passing rules. It is advised to fix them later, rule by rule. &lt;/details&gt;</p>
 
-## Explanation
+<p>&lt;details&gt; &lt;summary&gt; &lt;strong&gt;📍 <code>Gemfile</code> has lots of <code>Bundler/GemVersion</code> errors &lt;/strong&gt; &lt;/summary&gt;</p>
 
-Each dependency should be explicitly set in the `Gemfile` and `bundle update` is strongly discouraged.
+<h2 id="label-Explanation">Explanation</h2>
 
-## Solution
+<p>Each dependency should be explicitly set in the <code>Gemfile</code> and <code>bundle update</code> is strongly discouraged.</p>
 
-### Solution 1 : Use bundle-locker
+<h2 id="label-Solution">Solution</h2>
 
-1. Install bundle-locker globally
+<h3 id="label-Solution+1+-3A+Use+bundle-locker">Solution 1 : Use bundle-locker</h3>
+<ol><li>
+<p>Install bundle-locker globally</p>
+</li></ol>
 
-  ```shell
-  gem install bundle-locker
-  ```
+<p><code>shell  gem install bundle-locker </code></p>
+<ol><li>
+<p>Pin Gemfile using <code>Gemfile.lock</code></p>
+</li></ol>
 
-2. Pin Gemfile using `Gemfile.lock`
+<p><code>shell  bundle-locker ./Gemfile </code></p>
+<ol><li>
+<p>Manually edit <code>Gemfile</code> and adjust constraints <code>&quot;x.x.x&quot;</code>, <code>&quot;~&gt; x.x.x&quot;</code>, etc</p>
+</li><li>
+<p>Update <code>Gemfile.lock</code></p>
+</li></ol>
 
-  ```shell
-  bundle-locker ./Gemfile
-  ```
+<p><code>shell  bundle install </code></p>
 
-3. Manually edit `Gemfile` and adjust constraints `"x.x.x"`, `"~> x.x.x"`,  etc
+<p>&lt;/details&gt;</p>
 
-4. Update `Gemfile.lock`
-
-  ```shell
-  bundle install
-  ```
-
-</details>
-
-<h2 id="contributing">Contributing</h2>
+<h2 id="label-Contributing">Contributing</h2>
 
 <p>To contribute, here are some inspirations for good configurations :</p>
+<ul><li>
+<p><a href="https://github.com/airbnb/ruby/tree/main/rubocop-airbnb">Airbnb</a></p>
+</li></ul>
 
-<ul>
-<li><a href="https://github.com/airbnb/ruby/tree/main/rubocop-airbnb">Airbnb</a></li>
-</ul>
-
-<h2 id="license">License</h2>
-
+<h2 id="label-License">License</h2>
 <!-- AUTO-GENERATED-CONTENT:START (PKG_JSON:template=[$license][license-url] © $author) -->
-
 <p><a href="./LICENSE">MIT</a> © Captive Studio <a href="mailto:julien.polo@captive.fr">julien.polo@captive.fr</a></p>
+<!-- AUTO-GENERATED-CONTENT:START (PKG_JSON:template=[license-image]: https://img.shields.io/badge/license-$license-green.svg?style=flat-square) --><!-- AUTO-GENERATED-CONTENT:END -->
+<h2 id="label-About+Captive">About Captive</h2>
 
-<!-- AUTO-GENERATED-CONTENT:START (PKG_JSON:template=[license-image]: https://img.shields.io/badge/license-$license-green.svg?style=flat-square) -->
+<p><img src="https://raw.githubusercontent.com/Captive-Studio/assets/main/logo_captive_blue_avec_fond.webp"></p>
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+<p>rubocop-config-captive is maintained and funded by Captive. The names and logos for captive are trademarks of captive-studio.</p>
+
+<p>We love open source software! See <a href="https://github.com/Captive-Studio">our other projects</a> or <a href="https://www.captive.fr/contact?utm_source=github">hire us</a> to design, develop, and grow your product.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Tue Nov  7 17:21:12 2023 by
+  Generated on Sun Jan 28 18:34:37 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.34 (ruby-3.2.2).
+  0.9.34 (ruby-3.3.0).
 </div>
 
     </div>
