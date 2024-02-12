@@ -13,3 +13,19 @@ RSpec/ScatteredSetup:
 RSpec/RepeatedExample:
   Exclude:
     - 'spec/requests/**/*'
+
+RSpec/ContextWording:
+  Enabled: true
+  Prefixes:
+    - when
+    - with
+    - without
+    - if
+    - unless
+    - for
+    - quand
+    - avec
+    - sans
+    - si
+    - sauf si
+    - pour
