@@ -6,11 +6,11 @@ __metadata:
   cacheKey: 10c0
 
 "@babel/runtime@npm:^7.21.0":
-  version: 7.23.9
-  resolution: "@babel/runtime@npm:7.23.9"
+  version: 7.24.4
+  resolution: "@babel/runtime@npm:7.24.4"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
-  checksum: 10c0/e71205fdd7082b2656512cc98e647d9ea7e222e4fe5c36e9e5adc026446fcc3ba7b3cdff8b0b694a0b78bb85db83e7b1e3d4c56ef90726682b74f13249cf952d
+  checksum: 10c0/785aff96a3aa8ff97f90958e1e8a7b1d47f793b204b47c6455eaadc3f694f48c97cd5c0a921fe3596d818e71f18106610a164fb0f1c71fd68c622a58269d537c
   languageName: node
   linkType: hard
 
@@ -38,28 +38,28 @@ __metadata:
   linkType: hard
 
 "@w5s/commitlint-config@npm:^2.0.0":
-  version: 2.0.7
-  resolution: "@w5s/commitlint-config@npm:2.0.7"
+  version: 2.0.14
+  resolution: "@w5s/commitlint-config@npm:2.0.14"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
-    "@w5s/conventional-changelog": "npm:^2.0.5"
+    "@w5s/conventional-changelog": "npm:^2.0.12"
   peerDependencies:
-    "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0
+    "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 10c0/a2156e933fe912b24fd8da2d454a24c8b7ac76fdce555a71ce31bafa2d63707abc794124546fd79ebe562a434a1fb38cb880f422e4e8f85eceddffa5975a563a
+  checksum: 10c0/22594075308dc1e0a48bfb8f45d7b89b2a3f25209d998052bc1832c37de4dbd131a65747f170e5ed2de69d5748f7121b6e29242975993f79bcbf6e654dd9a0b6
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "@w5s/conventional-changelog@npm:2.0.5"
+"@w5s/conventional-changelog@npm:^2.0.12":
+  version: 2.0.12
+  resolution: "@w5s/conventional-changelog@npm:2.0.12"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
     emoji-regex: "npm:^10.2.1"
     gitmojis: "npm:^3.13.4"
-  checksum: 10c0/e6b781966fe22ab0a6636e5639f0c1501e941b05715f766bc20ed7f748f6b1c948fd78f0ec12332c58349d15a2ffff99824a2c7a776a6cb0508d6e707308afce
+  checksum: 10c0/06e19672a8c3502ead8c39abcac3ab128b5c330197c863a2e700c819de1038e81dfe29f4b9ef9a0e196c92d4772d89350082b522bd17836cb4d7d72c05763602
   languageName: node
   linkType: hard
 
