@@ -6,11 +6,11 @@ __metadata:
   cacheKey: 10c0
 
 "@babel/runtime@npm:^7.21.0":
-  version: 7.24.6
-  resolution: "@babel/runtime@npm:7.24.6"
+  version: 7.24.7
+  resolution: "@babel/runtime@npm:7.24.7"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
-  checksum: 10c0/224ad205de33ea28979baaec89eea4c4d4e9482000dd87d15b97859365511cdd4d06517712504024f5d33a5fb9412f9b91c96f1d923974adf9359e1575cde049
+  checksum: 10c0/b6fa3ec61a53402f3c1d75f4d808f48b35e0dfae0ec8e2bb5c6fc79fb95935da75766e0ca534d0f1c84871f6ae0d2ebdd950727cfadb745a2cdbef13faef5513
   languageName: node
   linkType: hard
 
@@ -38,28 +38,28 @@ __metadata:
   linkType: hard
 
 "@w5s/commitlint-config@npm:^2.0.0":
-  version: 2.0.15
-  resolution: "@w5s/commitlint-config@npm:2.0.15"
+  version: 2.0.16
+  resolution: "@w5s/commitlint-config@npm:2.0.16"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
-    "@w5s/conventional-changelog": "npm:^2.0.13"
+    "@w5s/conventional-changelog": "npm:^2.0.14"
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 10c0/1f49884431047fbb9ec7ed633a14bfb8f6ed1267de5c7903e1520aadbdc02b551a149cfee40e5c6d749a5e5a4a88ea49470bce658b379ffc6dc262a796cddc46
+  checksum: 10c0/0306572196f446408a86b3cdd87cbd4d398772225eab7111b8e84f17d8909c093b2f36dd350b07839653eff4aa2bc541504fd35358d8a4bb326944a5ec0df6f0
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^2.0.13":
-  version: 2.0.13
-  resolution: "@w5s/conventional-changelog@npm:2.0.13"
+"@w5s/conventional-changelog@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@w5s/conventional-changelog@npm:2.0.14"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
     emoji-regex: "npm:^10.2.1"
     gitmojis: "npm:^3.13.4"
-  checksum: 10c0/9e82b7fafee71dd29b04fc49ca2bca95bfeab94548eefc9e6b67dafbdf092a9b448cf774b5a53e42d98781a818ce3dbc95a13be8451bb7eadb155194c7b4c4a1
+  checksum: 10c0/483bbe0c1e61ce4e39e7f2e3576ab10cabd0d59e8799b18597a5b32b96b16b14f5d37b5754af440232a6ec45b01c82161346badcd2c2a95312f940d105e17194
   languageName: node
   linkType: hard
 
@@ -295,9 +295,9 @@ __metadata:
   linkType: hard
 
 "tslib@npm:^2.1.0":
-  version: 2.6.2
-  resolution: "tslib@npm:2.6.2"
-  checksum: 10c0/e03a8a4271152c8b26604ed45535954c0a45296e32445b4b87f8a5abdb2421f40b59b4ca437c4346af0f28179780d604094eb64546bee2019d903d01c6c19bdb
+  version: 2.6.3
+  resolution: "tslib@npm:2.6.3"
+  checksum: 10c0/2598aef53d9dbe711af75522464b2104724d6467b26a60f2bdac8297d2b5f1f6b86a71f61717384aa8fd897240467aaa7bcc36a0700a0faf751293d1331db39a
   languageName: node
   linkType: hard
 
