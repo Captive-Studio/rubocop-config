@@ -7,6 +7,7 @@ require:
   - ../lib/rubocop/cop/captive/rails/force_ssl_enabled_in_production.rb
   - ../lib/rubocop/cop/captive/rails/migration_methods.rb
   - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
+  - ../lib/rubocop/cop/captive/rails/no_float_price_columns.rb
   - ../lib/rubocop/cop/captive/string_where_in_scope.rb
   - ../lib/rubocop/cop/captive/no_app_env.rb
 
@@ -55,6 +56,12 @@ Captive/Rails/NoEmailFromController:
   Description: "Do not send emails from controllers. Because it doesn't follow the MVC standard"
   Include:
     - 'app/controllers/**/*'
+
+# Rails
+Captive/Rails/NoFloatPriceColumns:
+  Description: "Avoid using `float` type for price columns. Use `decimal, precision: 10, scale: 2` instead."
+  Include:
+    - 'db/migrate/**/*'
 
 # other
 Captive/StringWhereInScope:
