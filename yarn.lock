@@ -6,11 +6,11 @@ __metadata:
   cacheKey: 10c0
 
 "@babel/runtime@npm:^7.21.0":
-  version: 7.24.8
-  resolution: "@babel/runtime@npm:7.24.8"
+  version: 7.25.0
+  resolution: "@babel/runtime@npm:7.25.0"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
-  checksum: 10c0/f24b30af6b3ecae19165b3b032f9bc37b2d1769677bd63b69a6f81061967cfc847aa822518402ea6616b1d301d7eb46986b99c9f69cdb5880834fca2e6b34881
+  checksum: 10c0/bd3faf246170826cef2071a94d7b47b49d532351360ecd17722d03f6713fd93a3eb3dbd9518faa778d5e8ccad7392a7a604e56bd37aaad3f3aa68d619ccd983d
   languageName: node
   linkType: hard
 
@@ -38,28 +38,28 @@ __metadata:
   linkType: hard
 
 "@w5s/commitlint-config@npm:^2.0.0":
-  version: 2.0.18
-  resolution: "@w5s/commitlint-config@npm:2.0.18"
+  version: 2.0.20
+  resolution: "@w5s/commitlint-config@npm:2.0.20"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
-    "@w5s/conventional-changelog": "npm:^2.0.16"
+    "@w5s/conventional-changelog": "npm:^2.0.18"
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 10c0/bf0afa2a5e2466cf54cda17e1b551d0fcb320d4a8b5be33d1368d6f87e399549403b3ec4fb32aa85024b0f882013717f20b88c8a4af531f6a0055a60609a4eef
+  checksum: 10c0/39932bbfa1cc026f2ffa98e8c4b789e2e1fb4b454ec313dab46e6d078776f2567fd87af82001e0ca1b89aea053026815e9c874bd46457b96be1046f12183d5a7
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^2.0.16":
-  version: 2.0.16
-  resolution: "@w5s/conventional-changelog@npm:2.0.16"
+"@w5s/conventional-changelog@npm:^2.0.18":
+  version: 2.0.18
+  resolution: "@w5s/conventional-changelog@npm:2.0.18"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
     emoji-regex: "npm:^10.2.1"
     gitmojis: "npm:^3.13.4"
-  checksum: 10c0/8c1e29231a7c8453c8f105e442fac94dd7a56956ff5df5028731fc2bf27404b9328274157787a674d4adb47b7a81261d568574de76d226c741223cc69380e7ff
+  checksum: 10c0/a191ebd2e60c4b03e992d853369c4e9bd66212aa3d7a6e0264c4b0fe8b8ca7f4b7573fad2ad03481e588c744fbda5201060210adba82180a6f322815cf3ea5ea
   languageName: node
   linkType: hard
 
