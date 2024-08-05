@@ -6,7 +6,7 @@
   "scripts": {
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
     "prepare": "concurrently \"npm:postinstall:*\"",
-    "prepare:githooks": "[ -n \"${CI:-}\" ] || npx husky install .githooks",
+    "prepare:githooks": "[ -n \"${CI:-}\" ] || git config core.hooksPath .githooks",
     "postinstall": "npm run prepare",
     "release": "script/release"
   },
