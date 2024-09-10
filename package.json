@@ -1,13 +1,12 @@
 {
   "devDependencies": {
     "@captive/commitlint-config": "2.1.8",
-    "concurrently": "8.2.2"
+    "npm-run-all2": "6.2.2"
   },
   "scripts": {
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
-    "prepare": "concurrently \"npm:postinstall:*\"",
-    "prepare:githooks": "[ -n \"${CI:-}\" ] || git config core.hooksPath .githooks",
-    "postinstall": "npm run prepare",
+    "postinstall": "npx run-p \"postinstall:*\"",
+    "postinstall:githooks": "[ -n \"${CI:-}\" ] || git config core.hooksPath .githooks",
     "release": "script/release"
   },
   "commitlint": {
