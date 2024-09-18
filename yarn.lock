@@ -29,28 +29,28 @@ __metadata:
   linkType: hard
 
 "@w5s/commitlint-config@npm:^2.0.0":
-  version: 2.0.20
-  resolution: "@w5s/commitlint-config@npm:2.0.20"
+  version: 2.0.27
+  resolution: "@w5s/commitlint-config@npm:2.0.27"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
-    "@w5s/conventional-changelog": "npm:^2.0.18"
+    "@w5s/conventional-changelog": "npm:^2.0.25"
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 10c0/39932bbfa1cc026f2ffa98e8c4b789e2e1fb4b454ec313dab46e6d078776f2567fd87af82001e0ca1b89aea053026815e9c874bd46457b96be1046f12183d5a7
+  checksum: 10c0/3c6c13e8726af993f49a8611d484db25c14c75ebedc44b8da94267702080d522c8a8caf028faa7a657c395a9cdbb533d41c6e102d47a1f17fcd37727d7c4a83f
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^2.0.18":
-  version: 2.0.18
-  resolution: "@w5s/conventional-changelog@npm:2.0.18"
+"@w5s/conventional-changelog@npm:^2.0.25":
+  version: 2.0.25
+  resolution: "@w5s/conventional-changelog@npm:2.0.25"
   dependencies:
     "@commitlint/types": "npm:^18.0.0"
     emoji-regex: "npm:^10.2.1"
     gitmojis: "npm:^3.13.4"
-  checksum: 10c0/a191ebd2e60c4b03e992d853369c4e9bd66212aa3d7a6e0264c4b0fe8b8ca7f4b7573fad2ad03481e588c744fbda5201060210adba82180a6f322815cf3ea5ea
+  checksum: 10c0/e3f173198a9adda8592b11ed539d1b75fceea85c3f58f62866f306c9b12bd9fe8baaf90d196744df51452e3310cfd0aec0a1c427e861636ce73976ecb583147e
   languageName: node
   linkType: hard
 
@@ -124,9 +124,9 @@ __metadata:
   linkType: hard
 
 "emoji-regex@npm:^10.2.1":
-  version: 10.3.0
-  resolution: "emoji-regex@npm:10.3.0"
-  checksum: 10c0/b4838e8dcdceb44cf47f59abe352c25ff4fe7857acaf5fb51097c427f6f75b44d052eb907a7a3b86f86bc4eae3a93f5c2b7460abe79c407307e6212d65c91163
+  version: 10.4.0
+  resolution: "emoji-regex@npm:10.4.0"
+  checksum: 10c0/a3fcedfc58bfcce21a05a5f36a529d81e88d602100145fcca3dc6f795e3c8acc4fc18fe773fbf9b6d6e9371205edb3afa2668ec3473fa2aa7fd47d2a9d46482d
   languageName: node
   linkType: hard
 
