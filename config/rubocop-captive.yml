@@ -8,6 +8,7 @@ require:
   - ../lib/rubocop/cop/captive/rails/migration_methods.rb
   - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
   - ../lib/rubocop/cop/captive/rails/no_float_price_columns.rb
+  - ../lib/rubocop/cop/captive/rails/no_find_by_in_scope.rb
   - ../lib/rubocop/cop/captive/string_where_in_scope.rb
   - ../lib/rubocop/cop/captive/no_app_env.rb
 
@@ -39,29 +40,30 @@ Captive/RSpec/SpecifyBeforeParameter:
   Include:
     - 'spec/**/*'
 
-# Rails
 Captive/Rails/ForceSslEnabledInProduction:
   Description: "Ensures SSL is forced in production, so that secure cookies are used."
   Include:
     - 'config/environments/production.rb'
 
-# Rails
 Captive/Rails/MigrationMethods:
   Description: "Avoid using ActiveRecord::Migration methods in `up` and `down` methods. Use `change` instead."
   Include:
     - 'db/migrate/**/*'
 
-# Rails
 Captive/Rails/NoEmailFromController:
   Description: "Do not send emails from controllers. Because it doesn't follow the MVC standard"
   Include:
     - 'app/controllers/**/*'
 
-# Rails
 Captive/Rails/NoFloatPriceColumns:
   Description: "Avoid using `float` type for price columns. Use `decimal, precision: 10, scale: 2` instead."
   Include:
     - 'db/migrate/**/*'
+
+Captive/Rails/NoFindByInScope:
+  Description: "Avoid using `find_by` in a scope. Use `where` to return a collection or define a class method if you need a single record."
+  Include:
+    - 'app/models/**/*'
 
 # other
 Captive/StringWhereInScope:
