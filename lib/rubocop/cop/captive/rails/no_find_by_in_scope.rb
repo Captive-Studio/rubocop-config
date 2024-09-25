@@ -5,6 +5,8 @@ module RuboCop
     module Captive
       module Rails
         # Avoid using `find_by` in a scope. Use `where` to return a collection or define a class method if you need a single record.
+        #
+        # @see https://stackoverflow.com/questions/31329554/find-by-inside-a-scope-is-firing-2-queries
         class NoFindByInScope < RuboCop::Cop::Cop
           MSG = "Avoid using `find_by` in a scope. Use `where` to return \
             a collection or define a class method if you need a single record."
