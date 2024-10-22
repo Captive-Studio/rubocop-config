@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@captive/commitlint-config": "2.1.11",
-    "npm-run-all2": "6.2.6"
+    "npm-run-all2": "7.0.0"
   },
   "scripts": {
     "docs": "export DOC_DIR=docs; yard -o $DOC_DIR && git add $DOC_DIR/",
