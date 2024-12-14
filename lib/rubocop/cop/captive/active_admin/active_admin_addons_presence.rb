@@ -13,7 +13,7 @@ module RuboCop
         #   # good
         #   gem 'activeadmin'
         #   gem 'activeadmin_addons'
-        class ActiveAdminAddonsPresence < RuboCop::Cop::Cop
+        class ActiveAdminAddonsPresence < RuboCop::Cop::Base
           MSG = "The gem `activeadmin_addons` should be added to the Gemfile "\
                 "if `activeadmin` is present in Gemfile"
 

@@ -13,7 +13,7 @@ module RuboCop
         #   # good
         #   gem 'devise'
         #   gem 'devise-i18n'
-        class DeviseI18nPresence < RuboCop::Cop::Cop
+        class DeviseI18nPresence < RuboCop::Cop::Base
           MSG = "The gem `devise-i18n` should be added to the Gemfile "\
                 "if `devise` is present in Gemfile"
 

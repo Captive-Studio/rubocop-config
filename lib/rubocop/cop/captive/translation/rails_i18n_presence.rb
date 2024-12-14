@@ -15,7 +15,7 @@ module RuboCop
         #   # good
         #   gem 'rails'
         #   gem 'rails-i18n'
-        class RailsI18nPresence < RuboCop::Cop::Cop
+        class RailsI18nPresence < RuboCop::Cop::Base
           MSG = "The gem `rails-i18n` should be added to the Gemfile "\
                 "if `rails` is present in Gemfile"
 

@@ -6,7 +6,7 @@ module RuboCop
       # This cop checks for usages of the `APP_ENV` environment variable.
       # Usage of `APP_ENV` is prohibited as it conflicts with standard Rails/Rack
       # environment variable `RAILS_ENV` and may lead to unexpected results.
-      class NoAppEnv < RuboCop::Cop::Cop
+      class NoAppEnv < RuboCop::Cop::Base
         MSG = "Do not use `APP_ENV` environment variable as it conflicts with "\
               "standard Rails/Rack environment variable `RAILS_ENV`."
 

@@ -15,7 +15,7 @@ module RuboCop
         #   # good
         #   gem 'kaminari'
         #   gem 'kaminari-i18n'
-        class KaminariI18nPresence < RuboCop::Cop::Cop
+        class KaminariI18nPresence < RuboCop::Cop::Base
           MSG = "The gem `kaminari-i18n` should be added to the Gemfile "\
                 "if `kaminari` is present in Gemfile"
 

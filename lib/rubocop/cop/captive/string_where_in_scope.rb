@@ -17,7 +17,7 @@ module RuboCop
       #   date_after(Date.current)
       #
       #   scope :date_after, ->(date) { where('date > ?', date) }
-      class StringWhereInScope < RuboCop::Cop::Cop
+      class StringWhereInScope < RuboCop::Cop::Base
         MSG = "The `where` method should be used in a scope in a model."
 
         def_node_matcher :where_with_string?, <<~PATTERN

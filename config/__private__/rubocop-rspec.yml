@@ -87,10 +87,10 @@ RSpec/ExpectInHook:
 RSpec/ExpectOutput:
   Description: Checks for opportunities to use `expect { ... }.to output`.
   Enabled: false
-RSpec/FilePath:
+Rails/FilePath:
   Description: 'Checks the file and folder naming of the spec file.'
   Enabled: false
-  CustomTransform:
+  SupportedStyles:
     RuboCop: rubocop
     RSpec: rspec
 RSpec/Focus:
