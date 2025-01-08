@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@captive/commitlint-config": "2.1.13",
+    "@captive/commitlint-config": "2.1.14",
     "npm-run-all2": "7.0.2"
   },
   "scripts": {
