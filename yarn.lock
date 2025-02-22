@@ -39,37 +39,37 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.13.4
-  resolution: "@types/node@npm:22.13.4"
+  version: 22.13.5
+  resolution: "@types/node@npm:22.13.5"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10c0/3a234fa7766a3efc382cf81f66f474c26cdab2f54f43f757634c81c0444eb2160c2dabbde9741e4983078a318a88515b65416b5f1ab5478548579d7b3ead1d95
+  checksum: 10c0/a2e7ed7bb0690e439004779baedeb05159c5cc41ef6d81c7a6ebea5303fde4033669e1c0e41ff7453b45fd2fea8dbd55fddfcd052950c7fcae3167c970bca725
   languageName: node
   linkType: hard
 
 "@w5s/commitlint-config@npm:^2.0.0":
-  version: 2.1.7
-  resolution: "@w5s/commitlint-config@npm:2.1.7"
+  version: 2.1.8
+  resolution: "@w5s/commitlint-config@npm:2.1.8"
   dependencies:
     "@commitlint/types": "npm:^19.0.0"
-    "@w5s/conventional-changelog": "npm:^2.2.0"
+    "@w5s/conventional-changelog": "npm:^2.2.1"
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 10c0/56274d06b0046d9e17f835d8544ba950e397de43f163aaddbbd26260efd67e845b16164a71aba183d7f136066d69c89bc36ba375e14f7d8300ecf8dce59d503e
+  checksum: 10c0/04f1ee96c34270cf57f217b1a51be0d1cc37162c653fc110d45a3e6ad99b6f6713bfa743497b9e1a5077ca6b48b08969424f97655af983f6ea4574a4d6a54d90
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@w5s/conventional-changelog@npm:2.2.0"
+"@w5s/conventional-changelog@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@w5s/conventional-changelog@npm:2.2.1"
   dependencies:
     "@commitlint/types": "npm:^19.0.0"
     emoji-regex: "npm:^10.2.1"
     gitmojis: "npm:^3.13.4"
-  checksum: 10c0/b822c3970883324b9b6ade37bfae1cb325f6f83b65f246c3b618d032b28747f27066d94efab6b23b40dacb632b9643a8a51e8d2c909f49c76fd41175b6800828
+  checksum: 10c0/80f37b703a4c8272f3586ff83db69ad704a521fbdbeab4541bca411301e193e3d51d4bc8d1e6bb456e702071885ddf311cd37693225feb3a71326b524bf37f29
   languageName: node
   linkType: hard
 
