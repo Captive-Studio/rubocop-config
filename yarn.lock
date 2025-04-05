@@ -39,37 +39,37 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.13.14
-  resolution: "@types/node@npm:22.13.14"
+  version: 22.14.0
+  resolution: "@types/node@npm:22.14.0"
   dependencies:
-    undici-types: "npm:~6.20.0"
-  checksum: 10c0/fa2ab5b8277bfbcc86c42e46a3ea9871b0d559894cc9d955685d17178c9499f0b1bf03d1d1ea8d92ef2dda818988f4035acb8abf9dc15423a998fa56173ab804
+    undici-types: "npm:~6.21.0"
+  checksum: 10c0/9d79f3fa1af9c2c869514f419c4a4905b34c10e12915582fd1784868ac4e74c6d306cf5eb47ef889b6750ab85a31be96618227b86739c4a3e0b1c15063f384c6
   languageName: node
   linkType: hard
 
 "@w5s/commitlint-config@npm:^2.0.0":
-  version: 2.1.9
-  resolution: "@w5s/commitlint-config@npm:2.1.9"
+  version: 2.1.10
+  resolution: "@w5s/commitlint-config@npm:2.1.10"
   dependencies:
     "@commitlint/types": "npm:^19.0.0"
-    "@w5s/conventional-changelog": "npm:^2.2.2"
+    "@w5s/conventional-changelog": "npm:^2.2.3"
   peerDependencies:
     "@commitlint/cli": ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@commitlint/cli":
       optional: true
-  checksum: 10c0/a58814b15dbf61d78e72fcf824c83b57e54e2e117fb7e347bb6fe37d4b4eede5da14d4a6b1b1531e11249dd32258ca30cf78f3584fa871e917c43d9d3b82c676
+  checksum: 10c0/32657e03e0495617a7ab57528b59ab32d84e513b4fdf95a02964d04b8c05a5c37d6385402e6edb12b5b55e04cd6ab4ef25691bb4c6c53d57bc1468bad8ed2cd0
   languageName: node
   linkType: hard
 
-"@w5s/conventional-changelog@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "@w5s/conventional-changelog@npm:2.2.2"
+"@w5s/conventional-changelog@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@w5s/conventional-changelog@npm:2.2.3"
   dependencies:
     "@commitlint/types": "npm:^19.0.0"
     emoji-regex: "npm:^10.2.1"
     gitmojis: "npm:^3.13.4"
-  checksum: 10c0/ef64f70121bcb0c5b0f345c68fa196f3fffce94c2ff32cd80580b501a1cb6c6ced4ff1caba891818b05a12c2e5eb85adf0f0e25d552c749ae699b717d0d1e886
+  checksum: 10c0/4a979d596fa9111b2b090dc52c5c067545da230076a7f1685f047a493f3960d691ac0c3c3cca76c3565feedf24df0b273459aa1d763c125c3b765f400ce0d3f9
   languageName: node
   linkType: hard
 
@@ -251,10 +251,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.20.0":
-  version: 6.20.0
-  resolution: "undici-types@npm:6.20.0"
-  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
+"undici-types@npm:~6.21.0":
+  version: 6.21.0
+  resolution: "undici-types@npm:6.21.0"
+  checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
   languageName: node
   linkType: hard
 
