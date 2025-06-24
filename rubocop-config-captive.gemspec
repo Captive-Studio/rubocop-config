@@ -21,18 +21,14 @@ Gem::Specification.new do |gem|
     "Gemfile",
   ]
 
-  # It is not clear what the level of support is provided by Airbnb
-  # ⚠️ Instead of depending on rubocop-airbnb we copy sources
-  #
-  # gem.add_dependency('rubocop-airbnb', '~> 4.0.0')
-  gem.add_dependency("rubocop", "~> 1.69.2")
-  gem.add_dependency("rubocop-performance", "~> 1.23.0 ")
-  gem.add_dependency("rubocop-rake", "~> 0.6.0")
-  gem.add_dependency("rubocop-rails", "~> 2.27.0")
-  gem.add_dependency("rubocop-rspec", "~> 3.3.0")
-  gem.add_dependency("rubocop-capybara", "~> 2.21.0")
-  gem.add_dependency("rubocop-factory_bot", "~> 2.26.1")
+  gem.add_dependency("rubocop", "~> 1.77.0")
+  gem.add_dependency("rubocop-performance", "~> 1.25.0")
+  gem.add_dependency("rubocop-rake", "~> 0.7.1")
+  gem.add_dependency("rubocop-rails", "~> 2.32.0")
+  gem.add_dependency("rubocop-rspec", "~> 3.6.0")
+  gem.add_dependency("rubocop-capybara", "~> 2.22.1")
+  gem.add_dependency("rubocop-factory_bot", "~> 2.27.1")
   gem.add_dependency("rubocop-magic_numbers", "~> 0.5.0")
+  gem.add_dependency("rubocop-rails-omakase", "~> 1.1.0")
   gem.add_development_dependency("rspec", "~> 3.12")
-  # gem.metadata['rubygems_mfa_required'] = 'true'
 end

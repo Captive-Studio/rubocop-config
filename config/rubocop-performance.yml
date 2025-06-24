@@ -1,3 +1,0 @@
-inherit_from:
-  # @see https://github.com/airbnb/ruby/blob/main/rubocop-airbnb/config/rubocop-performance.yml
-  - ./__private__/rubocop-performance.yml

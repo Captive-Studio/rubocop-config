@@ -1,5 +1,5 @@
 ### 🚨 GENERATED WITH `script/pull`. DO NOT EDIT MANUALLY. ###
-require:
+plugins:
   - rubocop-rspec
 RSpec/AlignLeftLetBrace:
   Description: Checks that left braces for adjacent single line lets are aligned.
@@ -40,6 +40,9 @@ RSpec/DescribeSymbol:
   Enabled: true
 RSpec/DescribedClass:
   Description: 'Use `described_class` for tested class / module'
+  Enabled: false
+RSpec/Dialect:
+  Description: Enforces custom RSpec dialects.
   Enabled: false
 RSpec/EmptyExampleGroup:
   Description: Checks if an example group does not include any tests.
@@ -87,12 +90,6 @@ RSpec/ExpectInHook:
 RSpec/ExpectOutput:
   Description: Checks for opportunities to use `expect { ... }.to output`.
   Enabled: false
-Rails/FilePath:
-  Description: 'Checks the file and folder naming of the spec file.'
-  Enabled: false
-  SupportedStyles:
-    RuboCop: rubocop
-    RSpec: rspec
 RSpec/Focus:
   Description: Checks if examples are focused.
   Enabled: false
@@ -234,6 +231,15 @@ RSpec/SharedExamples:
 RSpec/SingleArgumentMessageChain:
   Description: Checks that chains of messages contain more than one element.
   Enabled: true
+RSpec/SpecFilePathFormat:
+  Description: Checks that spec file paths are consistent and well-formed.
+  Enabled: false
+  CustomTransform:
+    RuboCop: rubocop
+    RSpec: rspec
+RSpec/SpecFilePathSuffix:
+  Description: Checks that spec file paths suffix are consistent and well-formed.
+  Enabled: false
 RSpec/SubjectStub:
   Description: Checks for stubbed test subjects.
   Enabled: false
