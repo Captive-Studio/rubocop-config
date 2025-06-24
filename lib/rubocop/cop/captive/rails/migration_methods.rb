@@ -31,7 +31,7 @@ module RuboCop
           MSG = "Avoid using ActiveRecord::Migration methods in `up` and `down` methods. \
             Use `change` instead."
 
-          BLACKLISTED_METHODS = %i(
+          BLACKLISTED_METHODS = %i[
             add_column
             add_foreign_key
             add_index
@@ -50,14 +50,14 @@ module RuboCop
             rename_column
             rename_index
             rename_table
-          ).freeze
+          ].freeze
 
           def_node_search :migration_method?, <<~PATTERN
             (send nil? {#{BLACKLISTED_METHODS.map(&:inspect).join(" ")}} ...)
           PATTERN
 
           def on_def(node)
-            return unless %i(up down).include?(node.method_name)
+            return unless %i[up down].include?(node.method_name)
             return unless migration_method?(node)
 
             add_offense(node, message: MSG)

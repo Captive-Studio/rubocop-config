@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version = RuboCop::Captive::VERSION
   gem.summary = "Shared rubocop configurations"
   gem.description = "Shared rubocop configuration for Captive projects"
-  gem.authors = ["Captive", "Julien Polo", "Clément Prod'homme"]
-  gem.email = ["julien.polo@captive.fr"]
+  gem.authors = [ "Captive", "Julien Polo", "Clément Prod'homme" ]
+  gem.email = [ "julien.polo@captive.fr" ]
   gem.homepage = "https://github.com/Captive-Studio/rubocop-config"
   gem.license = "MIT"
   gem.required_ruby_version = ">= 2.6"

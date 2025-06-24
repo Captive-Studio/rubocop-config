@@ -1,2 +1,2 @@
-require:
-  - rubocop-rails-omakase
+inherit_gem:
+  rubocop-rails-omakase: rubocop.yml

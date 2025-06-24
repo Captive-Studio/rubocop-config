@@ -159,7 +159,7 @@ Use `change` instead.</span><span class='tstring_end'>&quot;</span></span></pre>
         <dt id="BLACKLISTED_METHODS-constant" class="">BLACKLISTED_METHODS =
           
         </dt>
-        <dd><pre class="code"><span class='qsymbols_beg'>%i(</span><span class='words_sep'>
+        <dd><pre class="code"><span class='qsymbols_beg'>%i[</span><span class='words_sep'>
 </span><span class='words_sep'>  </span><span class='tstring_content'>add_column</span><span class='words_sep'>
 </span><span class='words_sep'>  </span><span class='tstring_content'>add_foreign_key</span><span class='words_sep'>
 </span><span class='words_sep'>  </span><span class='tstring_content'>add_index</span><span class='words_sep'>
@@ -178,7 +178,7 @@ Use `change` instead.</span><span class='tstring_end'>&quot;</span></span></pre>
 </span><span class='words_sep'>  </span><span class='tstring_content'>rename_column</span><span class='words_sep'>
 </span><span class='words_sep'>  </span><span class='tstring_content'>rename_index</span><span class='words_sep'>
 </span><span class='words_sep'>  </span><span class='tstring_content'>rename_table</span><span class='words_sep'>
-</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+</span><span class='tstring_end'>]</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
       
     </dl>
   
@@ -255,7 +255,7 @@ Use `change` instead.</span><span class='tstring_end'>&quot;</span></span></pre>
       <pre class="code"><span class="info file"># File 'lib/rubocop/cop/captive/rails/migration_methods.rb', line 59</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_def'>on_def</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
-  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='qsymbols_beg'>%i(</span><span class='tstring_content'>up</span><span class='words_sep'> </span><span class='tstring_content'>down</span><span class='tstring_end'>)</span></span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_method_name'>method_name</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>up</span><span class='words_sep'> </span><span class='tstring_content'>down</span><span class='tstring_end'>]</span></span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='period'>.</span><span class='id identifier rubyid_method_name'>method_name</span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='kw'>unless</span> <span class='id identifier rubyid_migration_method?'>migration_method?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
 
   <span class='id identifier rubyid_add_offense'>add_offense</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span> <span class='label'>message:</span> <span class='const'><span class='object_link'><a href="#MSG-constant" title="RuboCop::Cop::Captive::Rails::MigrationMethods::MSG (constant)">MSG</a></span></span><span class='rparen'>)</span>
@@ -270,7 +270,7 @@ Use `change` instead.</span><span class='tstring_end'>&quot;</span></span></pre>
 </div>
 
       <div id="footer">
-  Generated on Tue Jun 24 10:44:24 2025 by
+  Generated on Tue Jun 24 10:55:47 2025 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.37 (ruby-3.4.2).
 </div>
