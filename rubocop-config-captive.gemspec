@@ -21,6 +21,8 @@ Gem::Specification.new do |gem|
     "Gemfile",
   ]
 
+  # Pour mettre à jour les dépendances, vous pouvez utiliser le script :
+  # ruby script/update_dependencies.rb
   gem.add_dependency("rubocop", "~> 1.77.0")
   gem.add_dependency("rubocop-performance", "~> 1.25.0")
   gem.add_dependency("rubocop-rake", "~> 0.7.1")
