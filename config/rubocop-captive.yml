@@ -4,6 +4,7 @@ require:
   - ../lib/rubocop/cop/captive/translation/rails_i18n_presence.rb
   - ../lib/rubocop/cop/captive/translation/kaminari_i18n_presence.rb
   - ../lib/rubocop/cop/captive/rspec/specify_before_parameter.rb
+  - ../lib/rubocop/cop/captive/rails/after_commit_not_allowed.rb
   - ../lib/rubocop/cop/captive/rails/force_ssl_enabled_in_production.rb
   - ../lib/rubocop/cop/captive/rails/migration_methods.rb
   - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
@@ -39,6 +40,16 @@ Captive/RSpec/SpecifyBeforeParameter:
   Description: 'Specify the parameter in `before` blocks. Example : before(:each) or before(:all)'
   Include:
     - 'spec/**/*'
+
+# Rails
+Captive/Rails/AfterCommitNotAllowed:
+  Description: "Interdit l'utilisation de `after_commit` dans les modèles Rails."
+  Severity: error
+  Enabled: true
+  Include:
+    - 'app/models/**/*.rb'
+  Exclude: []
+  Match: 'after_commit'
 
 Captive/Rails/ForceSslEnabledInProduction:
   Description: "Ensures SSL is forced in production, so that secure cookies are used."
