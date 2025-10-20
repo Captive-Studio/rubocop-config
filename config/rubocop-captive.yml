@@ -7,6 +7,7 @@ require:
   - ../lib/rubocop/cop/captive/rails/after_commit_not_allowed.rb
   - ../lib/rubocop/cop/captive/rails/force_ssl_enabled_in_production.rb
   - ../lib/rubocop/cop/captive/rails/migration_methods.rb
+  - ../lib/rubocop/cop/captive/rails/no_disable_ddl_transaction.rb
   - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
   - ../lib/rubocop/cop/captive/rails/no_float_price_columns.rb
   - ../lib/rubocop/cop/captive/rails/no_find_by_in_scope.rb
@@ -58,6 +59,11 @@ Captive/Rails/ForceSslEnabledInProduction:
 
 Captive/Rails/MigrationMethods:
   Description: "Avoid using ActiveRecord::Migration methods in `up` and `down` methods. Use `change` instead."
+  Include:
+    - 'db/migrate/**/*'
+
+Captive/Rails/NoDisableDdlTransaction:
+  Description: "Avoid using 'disable_ddl_transaction!' in migrations."
   Include:
     - 'db/migrate/**/*'
 
