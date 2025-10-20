@@ -11,7 +11,7 @@ add the follow line into your `Gemfile`
 
 ```ruby
 group :test, :development do
-  gem 'rubocop-config-captive', '2.0.0.pre.alpha.1'
+  gem 'rubocop-config-captive', '~> 2.0'
 end
 ```
 
