@@ -34,7 +34,7 @@ module RuboCop
         #       # Perform the operations needed after commit
         #     end
         #   end
-        class AfterCommitNotAllowed < Cop
+        class AfterCommitNotAllowed < Base
           MSG = "Interdit l'utilisation de `after_commit` dans les modèles Rails. \
             Utilisez un service plutôt."
 
