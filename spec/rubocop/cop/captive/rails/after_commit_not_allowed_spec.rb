@@ -9,7 +9,7 @@ RSpec.describe RuboCop::Cop::Captive::Rails::AfterCommitNotAllowed do
     expect_offense(<<~RUBY)
       class SomeModel < ApplicationRecord
         after_commit :some_method
-        ^^^^^^^^^^^^^^^^^^^^^^^^^ Captive/Rails/AfterCommitNotAllowed: Interdit l'utilisation de `after_commit` dans les modèles Rails.
+        ^^^^^^^^^^^^^^^^^^^^^^^^^ Captive/Rails/AfterCommitNotAllowed: Interdit l'utilisation de `after_commit` dans les modèles Rails.             Utilisez un service plutôt.
       end
     RUBY
   end

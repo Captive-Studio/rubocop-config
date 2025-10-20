@@ -5,12 +5,10 @@ require "spec_helper"
 RSpec.describe RuboCop::Cop::Captive::RSpec::SpecifyBeforeParameter, :config do
   subject(:cop) { described_class.new(config) }
 
-  let(:config) { RuboCop::Config.new }
-
   it "registers an offense when `before` is used without a parameter" do
     expect_offense(<<~RUBY)
       before do
-      ^^^^^^^^^ Captive/RSpec/SpecifyBeforeParameter: Specify the parameter in `before` blocks. Example : before(:each) or before(:all)
+      ^^^^^^^^^ Specify the parameter in `before` blocks. Example : before(:each) or before(:all)
         # some code
       end
     RUBY
@@ -41,7 +39,7 @@ RSpec.describe RuboCop::Cop::Captive::RSpec::SpecifyBeforeParameter, :config do
   it "registers an offense when `before` is used with a block parameter" do
     expect_offense(<<~RUBY)
       before do |example|
-      ^^^^^^^^^^^^^^^^^^^ Captive/RSpec/SpecifyBeforeParameter: Specify the parameter in `before` blocks. Example : before(:each) or before(:all)
+      ^^^^^^^^^^^^^^^^^^^ Specify the parameter in `before` blocks. Example : before(:each) or before(:all)
         # some code
       end
     RUBY

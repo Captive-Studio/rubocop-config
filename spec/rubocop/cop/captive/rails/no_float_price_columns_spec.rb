@@ -5,8 +5,6 @@ require "spec_helper"
 describe RuboCop::Cop::Captive::Rails::NoFloatPriceColumns do
   subject(:cop) { described_class.new }
 
-  let(:config) { RuboCop::Config.new }
-
   it 'registers an offense when adding a float column with name containing "price"' do
     expect_offense(<<~RUBY)
       add_column :products, :price, :float
