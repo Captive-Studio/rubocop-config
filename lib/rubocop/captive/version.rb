@@ -2,6 +2,6 @@
 
 module RuboCop
   module Captive
-    VERSION = "2.0.2"
+    VERSION = "2.0.3-2.0.2"
   end
 end
