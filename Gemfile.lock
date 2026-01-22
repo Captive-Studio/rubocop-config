@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-config-captive (2.0.1)
+    rubocop-config-captive (2.0.2)
       rubocop (~> 1.77.0)
       rubocop-capybara (~> 2.22.1)
       rubocop-factory_bot (~> 2.27.1)
