@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Class: RuboCop::Cop::Captive::Rails::AfterCommitNotAllowed
+  Class: RuboCop::Cop::Captive::Rails::NoHasManyAttached
   
     &mdash; Documentation by YARD 0.9.38
   
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../../../../css/common.css" type="text/css" />
 
 <script type="text/javascript">
-  pathId = "RuboCop::Cop::Captive::Rails::AfterCommitNotAllowed";
+  pathId = "RuboCop::Cop::Captive::Rails::NoHasManyAttached";
   relpath = '../../../../';
 </script>
 
@@ -36,10 +36,10 @@
       <div id="header">
         <div id="menu">
   
-    <a href="../../../../_index.html">Index (A)</a> &raquo;
+    <a href="../../../../_index.html">Index (N)</a> &raquo;
     <span class='title'><span class='object_link'><a href="../../../../RuboCop.html" title="RuboCop (module)">RuboCop</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../../Cop.html" title="RuboCop::Cop (module)">Cop</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Captive.html" title="RuboCop::Cop::Captive (module)">Captive</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Rails.html" title="RuboCop::Cop::Captive::Rails (module)">Rails</a></span></span>
      &raquo; 
-    <span class="title">AfterCommitNotAllowed</span>
+    <span class="title">NoHasManyAttached</span>
   
 </div>
 
@@ -59,7 +59,7 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><h1>Class: RuboCop::Cop::Captive::Rails::AfterCommitNotAllowed
+      <div id="content"><h1>Class: RuboCop::Cop::Captive::Rails::NoHasManyAttached
   
   
   
@@ -76,7 +76,7 @@
           
             <li class="next">Base</li>
           
-            <li class="next">RuboCop::Cop::Captive::Rails::AfterCommitNotAllowed</li>
+            <li class="next">RuboCop::Cop::Captive::Rails::NoHasManyAttached</li>
           
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
@@ -96,7 +96,7 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/rubocop/cop/captive/rails/after_commit_not_allowed.rb</dd>
+    <dd>lib/rubocop/cop/captive/rails/no_has_many_attached.rb</dd>
   </dl>
   
 </div>
@@ -104,45 +104,24 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>This cop checks for the use of ‘after_commit` in Rails models. Using `after_commit` can lead to unexpected behaviors and is discouraged. Instead, consider using a service object to handle the logic that would otherwise be placed inside an `after_commit` callback.</p>
+<p>Interdit l’utilisation de ‘has_many_attached` (Active Storage) dans les modèles Rails.</p>
 
-<p>For more information, see the documentation: <a href="https://captive.notion.site/Quota-expir-PDF-Monkey-25e707bff8eb8094ba48ecc564fe5bd7?source=copy_link">captive.notion.site/Quota-expir-PDF-Monkey-25e707bff8eb8094ba48ecc564fe5bd7?source=copy_link</a></p>
+<p>À chaque utilisation de ‘has_many_attached`, on finit par avoir besoin d’informations supplémentaires sur les fichiers (image de couverture, position, ordre, etc.), ce qu’on ne peut pas faire avec des blobs seuls. Par exemple, un produit avec ‘has_many_attached :images` permet d’afficher la première image en couverture, mais si cette image s’avère être une grille de tailles et qu’on veut en choisir une autre, c’est impossible : les pièces jointes sont de simples blobs sans attributs métier.</p>
+
+<p>La solution recommandée est d’utiliser un modèle associé (ex. ‘Photo`) avec `has_one_attached :file` et des attributs (position, type, etc.). Cela évite une migration coûteuse plus tard pour faire passer des millions d’images de blobs à un vrai modèle.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
-  <div class="examples">
-    <h4 class="tag_title">Examples:</h4>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
     
-      
-      <pre class="example code"><code><span class='comment'># bad
-</span><span class='kw'>class</span> <span class='const'>MyModel</span> <span class='op'>&lt;</span> <span class='const'>ApplicationRecord</span>
-  <span class='id identifier rubyid_after_commit'>after_commit</span> <span class='symbol'>:some_method</span>
-<span class='kw'>end</span>
-
-<span class='comment'># good
-</span><span class='kw'>class</span> <span class='const'>MyModel</span> <span class='op'>&lt;</span> <span class='const'>ApplicationRecord</span>
-  <span class='kw'>def</span> <span class='id identifier rubyid_save_something'>save_something</span>
-    <span class='const'>MyService</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='kw'>self</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_call'>call</span>
-  <span class='kw'>end</span>
-<span class='kw'>end</span>
-
-<span class='comment'># better
-</span><span class='comment'># Use a service object for handling post-persistence logic
-</span><span class='kw'>class</span> <span class='const'>MyService</span>
-  <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_model'>model</span><span class='rparen'>)</span>
-    <span class='ivar'>@model</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span>
-  <span class='kw'>end</span>
-
-  <span class='kw'>def</span> <span class='id identifier rubyid_call'>call</span>
-    <span class='comment'># Perform the operations needed after commit
-</span>  <span class='kw'>end</span>
-<span class='kw'>end</span></code></pre>
+      <li><a href="https://discuss.rubyonrails.org/t/active-storage-in-production-lessons-learned-and-in-depth-look-at-how-it-works/83289#p-254385-bonus-1-if-someone-were-to-write-active-storage-the-good-parts-then-has_many_attached-would-not-be-in-it-31" target="_parent" title="https://discuss.rubyonrails.org/t/active-storage-in-production-lessons-learned-and-in-depth-look-at-how-it-works/83289#p-254385-bonus-1-if-someone-were-to-write-active-storage-the-good-parts-then-has_many_attached-would-not-be-in-it-31">https://discuss.rubyonrails.org/t/active-storage-in-production-lessons-learned-and-in-depth-look-at-how-it-works/83289#p-254385-bonus-1-if-someone-were-to-write-active-storage-the-good-parts-then-has_many_attached-would-not-be-in-it-31</a></li>
     
-  </div>
-
+  </ul>
 
 </div>
   
@@ -156,8 +135,9 @@
         <dt id="MSG-constant" class="">MSG =
           
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Interdit l&#39;utilisation de `after_commit` dans les modèles Rails. \
-Utilisez un service plutôt.</span><span class='tstring_end'>&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>N&#39;utilisez pas `has_many_attached`. Préférez un modèle associé avec </span><span class='tstring_end'>&quot;</span></span> \
+<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>`has_one_attached` pour pouvoir ajouter des attributs </span><span class='tstring_end'>&quot;</span></span> \
+<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(position, image de couverture, etc.).</span><span class='tstring_end'>&quot;</span></span></pre></dd>
       
     </dl>
   
@@ -223,15 +203,19 @@ Utilisez un service plutôt.</span><span class='tstring_end'>&quot;</span></span
       <pre class="lines">
 
 
-45
-46
-47</pre>
+31
+32
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/rubocop/cop/captive/rails/after_commit_not_allowed.rb', line 45</span>
+      <pre class="code"><span class="info file"># File 'lib/rubocop/cop/captive/rails/no_has_many_attached.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_send'>on_send</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_add_offense'>add_offense</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span> <span class='label'>message:</span> <span class='const'><span class='object_link'><a href="#MSG-constant" title="RuboCop::Cop::Captive::Rails::AfterCommitNotAllowed::MSG (constant)">MSG</a></span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_after_commit?'>after_commit?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='id identifier rubyid_has_many_attached?'>has_many_attached?</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_add_offense'>add_offense</span><span class='lparen'>(</span><span class='id identifier rubyid_node'>node</span><span class='comma'>,</span> <span class='label'>message:</span> <span class='const'><span class='object_link'><a href="#MSG-constant" title="RuboCop::Cop::Captive::Rails::NoHasManyAttached::MSG (constant)">MSG</a></span></span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>

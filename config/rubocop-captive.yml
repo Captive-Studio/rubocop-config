@@ -11,6 +11,7 @@ require:
   - ../lib/rubocop/cop/captive/rails/no_email_from_controller.rb
   - ../lib/rubocop/cop/captive/rails/no_float_price_columns.rb
   - ../lib/rubocop/cop/captive/rails/no_find_by_in_scope.rb
+  - ../lib/rubocop/cop/captive/rails/no_has_many_attached.rb
   - ../lib/rubocop/cop/captive/string_where_in_scope.rb
   - ../lib/rubocop/cop/captive/no_app_env.rb
 
@@ -79,6 +80,12 @@ Captive/Rails/NoFloatPriceColumns:
 
 Captive/Rails/NoFindByInScope:
   Description: "Avoid using `find_by` in a scope. Use `where` to return a collection or define a class method if you need a single record."
+  Include:
+    - 'app/models/**/*'
+
+Captive/Rails/NoHasManyAttached:
+  Description: "N'utilisez pas `has_many_attached` (Active Storage). Préférez un modèle associé avec `has_one_attached` pour pouvoir ajouter des attributs (position, image de couverture, etc.)."
+  Severity: error
   Include:
     - 'app/models/**/*'
 
