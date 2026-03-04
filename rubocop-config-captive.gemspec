@@ -23,14 +23,14 @@ Gem::Specification.new do |gem|
 
   # Pour mettre à jour les dépendances, vous pouvez utiliser le script :
   # ruby script/update_dependencies.rb
-  gem.add_dependency("rubocop", "~> 1.77.0")
-  gem.add_dependency("rubocop-performance", "~> 1.25.0")
-  gem.add_dependency("rubocop-rake", "~> 0.7.1")
-  gem.add_dependency("rubocop-rails", "~> 2.32.0")
-  gem.add_dependency("rubocop-rspec", "~> 3.6.0")
-  gem.add_dependency("rubocop-capybara", "~> 2.22.1")
-  gem.add_dependency("rubocop-factory_bot", "~> 2.27.1")
-  gem.add_dependency("rubocop-magic_numbers", "~> 0.5.0")
-  gem.add_dependency("rubocop-rails-omakase", "~> 1.1.0")
+  gem.add_dependency("rubocop", "~> 1.77")
+  gem.add_dependency("rubocop-performance", "~> 1.25")
+  gem.add_dependency("rubocop-rake", "~> 0.7")
+  gem.add_dependency("rubocop-rails", "~> 2.32")
+  gem.add_dependency("rubocop-rspec", "~> 3.6")
+  gem.add_dependency("rubocop-capybara", "~> 2.22")
+  gem.add_dependency("rubocop-factory_bot", "~> 2.27")
+  gem.add_dependency("rubocop-magic_numbers", "~> 0.5")
+  gem.add_dependency("rubocop-rails-omakase", "~> 1.1")
   gem.add_development_dependency("rspec", "~> 3.12")
 end
